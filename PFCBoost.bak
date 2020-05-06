@@ -1,0 +1,455 @@
+EESchema Schematic File Version 4
+LIBS:portaPower-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RDSmith:LT4320 U?
+U 1 1 5E811DF1
+P 3300 3650
+F 0 "U?" H 3050 4000 50  0000 C CNN
+F 1 "LT4320" H 3500 3300 50  0000 C CNN
+F 2 "" H 3300 3650 50  0001 C CNN
+F 3 "" H 3300 3650 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RDSmith:LT8312 U?
+U 1 1 5E811E4A
+P 7600 3050
+F 0 "U?" H 7600 3828 50  0000 C CNN
+F 1 "LT8312" H 7600 3737 50  0000 C CNN
+F 2 "" H 7750 3450 50  0001 C CNN
+F 3 "" H 7750 3450 50  0001 C CNN
+	1    7600 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3650 2350 3650
+Text HLabel 1550 3650 0    50   BiDi ~ 0
+P
+Wire Wire Line
+	4650 3650 4650 5100
+Wire Wire Line
+	4650 5100 1550 5100
+Text HLabel 1550 5100 0    50   BiDi ~ 0
+N
+Wire Wire Line
+	3300 4000 3300 4150
+Wire Wire Line
+	3200 4000 3200 4150
+Wire Wire Line
+	3200 4150 3300 4150
+Connection ~ 3300 4150
+Wire Wire Line
+	3300 4150 3300 4700
+Wire Wire Line
+	3300 3300 3300 2400
+Wire Wire Line
+	7400 1900 7400 2450
+Wire Wire Line
+	7450 4700 7450 3800
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5E812203
+P 2450 2800
+F 0 "Q?" H 2656 2846 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 2656 2755 50  0000 L CNN
+F 2 "" H 2650 2900 50  0001 C CNN
+F 3 "~" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5E81228E
+P 2450 4100
+F 0 "Q?" H 2656 4146 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 2656 4055 50  0000 L CNN
+F 2 "" H 2650 4200 50  0001 C CNN
+F 3 "~" H 2450 4100 50  0001 C CNN
+	1    2450 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5E8122C2
+P 4150 4100
+F 0 "Q?" H 4355 4146 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 4355 4055 50  0000 L CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "~" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5E812393
+P 4150 2800
+F 0 "Q?" H 4355 2846 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 4355 2755 50  0000 L CNN
+F 2 "" H 4350 2900 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+	1    4150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3900 2350 3650
+Connection ~ 2350 3650
+Wire Wire Line
+	2350 3650 1550 3650
+Wire Wire Line
+	2350 3000 2350 3650
+Wire Wire Line
+	2350 2600 2350 2400
+Wire Wire Line
+	2350 2400 3300 2400
+Connection ~ 3300 2400
+Wire Wire Line
+	3300 2400 3300 1900
+Wire Wire Line
+	4250 2400 4250 2600
+Wire Wire Line
+	4250 3000 4250 3650
+Connection ~ 4250 3650
+Wire Wire Line
+	4250 3650 4650 3650
+Wire Wire Line
+	4250 3900 4250 3650
+Wire Wire Line
+	4250 4300 4250 4700
+Connection ~ 4250 4700
+Wire Wire Line
+	3300 4700 2350 4700
+Wire Wire Line
+	2350 4700 2350 4300
+Wire Wire Line
+	3950 2800 3800 2800
+Wire Wire Line
+	3800 2800 3800 3500
+Wire Wire Line
+	3800 3500 3650 3500
+Wire Wire Line
+	2950 3500 2800 3500
+Wire Wire Line
+	2800 3500 2800 2800
+Wire Wire Line
+	2800 2800 2650 2800
+Wire Wire Line
+	2950 3800 2800 3800
+Wire Wire Line
+	2800 3800 2800 4100
+Wire Wire Line
+	2800 4100 2650 4100
+Wire Wire Line
+	3650 3800 3800 3800
+Wire Wire Line
+	3800 3800 3800 4100
+Wire Wire Line
+	3650 3650 4250 3650
+Wire Wire Line
+	3800 4100 3950 4100
+Wire Wire Line
+	3300 2400 4250 2400
+Connection ~ 3300 4700
+Wire Wire Line
+	7550 3650 7550 3800
+Wire Wire Line
+	7550 3800 7450 3800
+Connection ~ 7450 3800
+Wire Wire Line
+	7450 3800 7450 3650
+Wire Wire Line
+	7550 3800 7650 3800
+Wire Wire Line
+	7850 3800 7850 3650
+Connection ~ 7550 3800
+Wire Wire Line
+	7750 3650 7750 3800
+Connection ~ 7750 3800
+Wire Wire Line
+	7750 3800 7850 3800
+Wire Wire Line
+	7650 3650 7650 3800
+Connection ~ 7650 3800
+Wire Wire Line
+	7650 3800 7750 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5E81A6ED
+P 6400 4800
+F 0 "#PWR?" H 6400 4550 50  0001 C CNN
+F 1 "GND" H 6405 4627 50  0000 C CNN
+F 2 "" H 6400 4800 50  0001 C CNN
+F 3 "" H 6400 4800 50  0001 C CNN
+	1    6400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4800 6400 4700
+Wire Wire Line
+	6400 4700 7450 4700
+$Comp
+L Device:C C?
+U 1 1 5E81BDAF
+P 4900 2450
+F 0 "C?" H 5015 2496 50  0000 L CNN
+F 1 "1u" H 5015 2405 50  0000 L CNN
+F 2 "" H 4938 2300 50  0001 C CNN
+F 3 "~" H 4900 2450 50  0001 C CNN
+	1    4900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E81BE4D
+P 8100 3550
+F 0 "C?" H 8215 3596 50  0000 L CNN
+F 1 "4.7u" H 8215 3505 50  0000 L CNN
+F 2 "" H 8138 3400 50  0001 C CNN
+F 3 "~" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3300 8100 3300
+Wire Wire Line
+	8100 3300 8100 3400
+Wire Wire Line
+	7150 3450 7050 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5E81DFB4
+P 7050 4000
+F 0 "#PWR?" H 7050 3750 50  0001 C CNN
+F 1 "GND" H 7055 3827 50  0000 C CNN
+F 2 "" H 7050 4000 50  0001 C CNN
+F 3 "" H 7050 4000 50  0001 C CNN
+	1    7050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E81DFD1
+P 8100 3900
+F 0 "#PWR?" H 8100 3650 50  0001 C CNN
+F 1 "GND" H 8105 3727 50  0000 C CNN
+F 2 "" H 8100 3900 50  0001 C CNN
+F 3 "" H 8100 3900 50  0001 C CNN
+	1    8100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3700 8100 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E81F87C
+P 6650 4000
+F 0 "#PWR?" H 6650 3750 50  0001 C CNN
+F 1 "GND" H 6655 3827 50  0000 C CNN
+F 2 "" H 6650 4000 50  0001 C CNN
+F 3 "" H 6650 4000 50  0001 C CNN
+	1    6650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E81F8B0
+P 6650 3750
+F 0 "R?" H 6582 3704 50  0000 R CNN
+F 1 "R_US" H 6582 3795 50  0000 R CNN
+F 2 "" V 6690 3740 50  0001 C CNN
+F 3 "~" H 6650 3750 50  0001 C CNN
+	1    6650 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E820549
+P 6650 3350
+F 0 "R?" H 6582 3304 50  0000 R CNN
+F 1 "R_US" H 6582 3395 50  0000 R CNN
+F 2 "" V 6690 3340 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6650 3150 6650 3200
+Wire Wire Line
+	6650 3500 6650 3550
+Wire Wire Line
+	6650 3900 6650 4000
+Wire Wire Line
+	6650 3550 6850 3550
+Wire Wire Line
+	6850 3550 6850 3300
+Connection ~ 6650 3550
+Wire Wire Line
+	6650 3550 6650 3600
+Wire Wire Line
+	4900 2300 4900 1900
+Connection ~ 4900 1900
+Wire Wire Line
+	4900 1900 5250 1900
+Wire Wire Line
+	5250 2300 5250 1900
+Connection ~ 5250 1900
+Wire Wire Line
+	4900 2600 4900 4700
+Connection ~ 4900 4700
+Wire Wire Line
+	4900 4700 5250 4700
+Wire Wire Line
+	5250 2600 5250 4700
+Connection ~ 5250 4700
+$Comp
+L Device:C C?
+U 1 1 5E829D2A
+P 7050 3800
+F 0 "C?" H 7165 3846 50  0000 L CNN
+F 1 "2.2u" H 7165 3755 50  0000 L CNN
+F 2 "" H 7088 3650 50  0001 C CNN
+F 3 "~" H 7050 3800 50  0001 C CNN
+	1    7050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3950 7050 4000
+Wire Wire Line
+	6850 3300 7150 3300
+Wire Wire Line
+	6650 3150 7150 3150
+Wire Wire Line
+	7050 3650 7050 3450
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5E8395C3
+P 9000 3000
+F 0 "Q?" H 9205 3046 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 9205 2955 50  0000 L CNN
+F 2 "" H 9200 3100 50  0001 C CNN
+F 3 "~" H 9000 3000 50  0001 C CNN
+	1    9000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E8396C6
+P 9100 3450
+F 0 "R?" H 9032 3404 50  0000 R CNN
+F 1 "R_US" H 9032 3495 50  0000 R CNN
+F 2 "" V 9140 3440 50  0001 C CNN
+F 3 "~" H 9100 3450 50  0001 C CNN
+	1    9100 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E839706
+P 9100 3700
+F 0 "#PWR?" H 9100 3450 50  0001 C CNN
+F 1 "GND" H 9105 3527 50  0000 C CNN
+F 2 "" H 9100 3700 50  0001 C CNN
+F 3 "" H 9100 3700 50  0001 C CNN
+	1    9100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3200 9100 3250
+Wire Wire Line
+	8050 3000 8800 3000
+Wire Wire Line
+	9100 3250 8600 3250
+Wire Wire Line
+	8600 3250 8600 3150
+Wire Wire Line
+	8600 3150 8050 3150
+Connection ~ 9100 3250
+Wire Wire Line
+	9100 3250 9100 3300
+Wire Wire Line
+	9100 3600 9100 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5E83EDC5
+P 10400 4300
+F 0 "#PWR?" H 10400 4050 50  0001 C CNN
+F 1 "GND" H 10405 4127 50  0000 C CNN
+F 2 "" H 10400 4300 50  0001 C CNN
+F 3 "" H 10400 4300 50  0001 C CNN
+	1    10400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4300 10400 3750
+Wire Wire Line
+	10400 3750 10700 3750
+Wire Wire Line
+	9100 2800 9100 1900
+Wire Wire Line
+	9100 1900 10700 1900
+Text HLabel 10700 1900 2    50   Output ~ 0
+Vbus
+Text HLabel 10700 3750 2    50   BiDi ~ 0
+GND
+Text Notes 3200 1500 0    50   ~ 0
+Active\nRectifier
+Text Notes 7500 1450 0    50   ~ 0
+PFC Boost\nConverter
+$Comp
+L Device:C C?
+U 1 1 5E8254C8
+P 5250 2450
+F 0 "C?" H 5365 2496 50  0000 L CNN
+F 1 "10u" H 5365 2405 50  0000 L CNN
+F 2 "" H 5288 2300 50  0001 C CNN
+F 3 "~" H 5250 2450 50  0001 C CNN
+	1    5250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E8426DA
+P 6100 2450
+F 0 "C?" H 6215 2496 50  0000 L CNN
+F 1 "1u" H 6215 2405 50  0000 L CNN
+F 2 "" H 6138 2300 50  0001 C CNN
+F 3 "~" H 6100 2450 50  0001 C CNN
+	1    6100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1900 4900 1900
+Wire Wire Line
+	4250 4700 4900 4700
+Wire Wire Line
+	3300 4700 4250 4700
+Wire Wire Line
+	5250 1900 6100 1900
+Connection ~ 6400 4700
+Wire Wire Line
+	6100 2300 6100 1900
+Connection ~ 6100 1900
+Wire Wire Line
+	6100 1900 7400 1900
+Wire Wire Line
+	6100 2600 6100 4700
+Wire Wire Line
+	5250 4700 6100 4700
+Connection ~ 6100 4700
+Wire Wire Line
+	6100 4700 6400 4700
+$EndSCHEMATC
