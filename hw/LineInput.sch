@@ -153,4 +153,10 @@ Text HLabel 3100 3600 0    50   Input ~ 0
 LINE_E
 Text Notes 4550 2100 0    50   ~ 0
 Common mode choke?\nPut in part and DNI?
+Text Label 7150 3250 0    50   ~ 0
+P
+Text Label 7150 3650 0    50   ~ 0
+N
+Text Label 3900 4300 0    50   ~ 0
+EARTH
 $EndSCHEMATC

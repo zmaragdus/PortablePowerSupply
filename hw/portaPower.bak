@@ -262,4 +262,10 @@ Wire Wire Line
 	5250 3800 5250 3900
 Text Notes 4000 2800 0    100  ~ 0
 Adjustment
+Text Label 3950 1500 0    50   ~ 0
+36V
+Text Label 3000 1500 0    50   ~ 0
+P
+Text Label 3000 1750 0    50   ~ 0
+N
 $EndSCHEMATC
