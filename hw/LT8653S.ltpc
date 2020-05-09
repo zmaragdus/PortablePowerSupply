@@ -8,9 +8,9 @@
       <PartName>LT8653S</PartName>
       <IcTa>25</IcTa>
       <LastSavedFilesCultureInfo>en-US</LastSavedFilesCultureInfo>
-      <SolutionAreamm2>217.3</SolutionAreamm2>
-      <SolutionComponentCount>7</SolutionComponentCount>
-      <SolutionMaxHeightmm>8.3</SolutionMaxHeightmm>
+      <SolutionAreamm2>352.8</SolutionAreamm2>
+      <SolutionComponentCount>8</SolutionComponentCount>
+      <SolutionMaxHeightmm>16.8</SolutionMaxHeightmm>
     </ConverterSpec>
   </ConverterSpecs>
   <ProgramUserInfos>
@@ -87,7 +87,7 @@
       <CinCeramicDerated>1.9008E-06</CinCeramicDerated>
       <CinCeramicVoltageRating>50</CinCeramicVoltageRating>
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
-      <VoStepMaxTargetPercent>3</VoStepMaxTargetPercent>
+      <VoStepMaxTargetPercent>2.97431505180064</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
       <Coc>3.111E-05</Coc>
       <ESRc>0.0021</ESRc>
@@ -121,7 +121,7 @@
       <Rsense>0.2</Rsense>
       <CurrentSensingConfigurationType>1</CurrentSensingConfigurationType>
       <CompConfigurationType>1</CompConfigurationType>
-      <SwitchingFreqDesired>2000000</SwitchingFreqDesired>
+      <SwitchingFreqDesired>2005000</SwitchingFreqDesired>
       <Rfreq>15000</Rfreq>
       <Vbias>5</Vbias>
       <HasExtvcc>True</HasExtvcc>
@@ -137,7 +137,8 @@
       <VOV_NonLatch_Desired>34</VOV_NonLatch_Desired>
       <RailNumber>1</RailNumber>
       <BW>19.95</BW>
-      <PM>63.69</PM>
+      <PM>62.34</PM>
+      <DeltaVoLoadStep>163.79</DeltaVoLoadStep>
       <FootprintClearanceFactor>1</FootprintClearanceFactor>
       <Mode>Buck</Mode>
       <ModeChanged>False</ModeChanged>
@@ -155,11 +156,11 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.8937</Efficiency>
+      <Efficiency>0.8933</Efficiency>
       <VoutRipplePercent>0.0002593097</VoutRipplePercent>
       <LossCurveA2>0.2067034943</LossCurveA2>
       <LossCurveA1>0.1071731695</LossCurveA1>
-      <LossCurveA0>0.219725648</LossCurveA0>
+      <LossCurveA0>0.2239172562</LossCurveA0>
       <LossCurveR2>1</LossCurveR2>
       <InputLCFilterEnabled>False</InputLCFilterEnabled>
       <Cf_in>4.70000044647605E-06</Cf_in>
@@ -192,28 +193,28 @@
       <PartWidth>3</PartWidth>
       <PartHeight>0.94</PartHeight>
       <VinToCalc>34</VinToCalc>
-      <IoToCalc>2</IoToCalc>
+      <IoToCalc>1</IoToCalc>
       <MaxVin>38</MaxVin>
       <NomVin>36</NomVin>
       <MinVin>34</MinVin>
       <SwitchingFreq>2005000</SwitchingFreq>
-      <OutputVol>3.3</OutputVol>
+      <OutputVol>26.07</OutputVol>
       <OutputCur>2.1</OutputCur>
       <NPh>1</NPh>
       <NIc>1</NIc>
       <VinD>6</VinD>
       <Ta>25</Ta>
-      <InductorThetaWA>25</InductorThetaWA>
+      <InductorThetaWA>24.5</InductorThetaWA>
       <InductorRipplePercentDesired>40</InductorRipplePercentDesired>
-      <Lo>2.2E-06</Lo>
-      <DCR>0.02135</DCR>
+      <Lo>3.3E-06</Lo>
+      <DCR>0.0212</DCR>
       <InductorManufacturer>COILCRAFT</InductorManufacturer>
-      <InductorPartNumber>XFL4020-222MEB</InductorPartNumber>
-      <InductorLength>4</InductorLength>
-      <InductorWidth>4</InductorWidth>
-      <InductorHeight>2.1</InductorHeight>
-      <InductorIsat>3.7</InductorIsat>
-      <InductorIheat>8</InductorIheat>
+      <InductorPartNumber>XAL5030-332MEB</InductorPartNumber>
+      <InductorLength>5.68</InductorLength>
+      <InductorWidth>5.48</InductorWidth>
+      <InductorHeight>3.1</InductorHeight>
+      <InductorIsat>8.7</InductorIsat>
+      <InductorIheat>8.1</InductorIheat>
       <InductorTheat>40</InductorTheat>
       <Cin>2.2E-05</Cin>
       <CinESR>0.04</CinESR>
@@ -223,46 +224,64 @@
       <CinCeramicESR>0.003</CinCeramicESR>
       <CinCeramicESL>3.97E-10</CinCeramicESL>
       <NCinCeramic>1</NCinCeramic>
+      <Cob>0.00022</Cob>
+      <ESRb>0.013</ESRb>
+      <ESLb>4.7E-09</ESLb>
+      <Numb>1</Numb>
+      <BulkCapacitorManufacturer>PANASONIC</BulkCapacitorManufacturer>
+      <BulkCapacitorPartNumber>EEHZS1H221P</BulkCapacitorPartNumber>
+      <BulkCapacitorLength>10</BulkCapacitorLength>
+      <BulkCapacitorWidth>10</BulkCapacitorWidth>
+      <BulkCapacitorHeight>16.8</BulkCapacitorHeight>
+      <BulkCapacitorPackage>G16</BulkCapacitorPackage>
+      <CobAtHalfRated>0.00022</CobAtHalfRated>
+      <CobAtFullRated>0.00022</CobAtFullRated>
+      <CobAtNoVoltage>0.00022</CobAtNoVoltage>
+      <CobDerated>0.00022</CobDerated>
+      <CobVoltageRating>50</CobVoltageRating>
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
-      <VoStepMaxTargetPercent>3</VoStepMaxTargetPercent>
+      <VoStepMaxTargetPercent>2.82875234707203</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
-      <Coc>7.2547429E-05</Coc>
-      <ESRc>0.0021</ESRc>
-      <ESLc>3.78E-10</ESLc>
+      <Coc>1.6464E-06</Coc>
+      <ESRc>0.0041</ESRc>
+      <ESLc>5.065E-10</ESLc>
       <Numc>1</Numc>
       <CeramicCapacitorManufacturer>MURATA</CeramicCapacitorManufacturer>
-      <CeramicCapacitorPartNumber>GRM32ER61A107ME20</CeramicCapacitorPartNumber>
+      <CeramicCapacitorPartNumber>GRM31CR61H106KA12</CeramicCapacitorPartNumber>
       <CeramicCapacitorLength>3.2</CeramicCapacitorLength>
-      <CeramicCapacitorWidth>2.5</CeramicCapacitorWidth>
-      <CeramicCapacitorHeight>2.7</CeramicCapacitorHeight>
-      <CeramicCapacitorPackage>1210</CeramicCapacitorPackage>
-      <CocAtHalfRated>4.662E-05</CocAtHalfRated>
-      <CocAtFullRated>2.126E-05</CocAtFullRated>
-      <CocAtNoVoltage>0.0001</CocAtNoVoltage>
-      <CocDerated>7.25474285714286E-05</CocDerated>
-      <CocVoltageRating>10</CocVoltageRating>
+      <CeramicCapacitorWidth>1.6</CeramicCapacitorWidth>
+      <CeramicCapacitorHeight>1.9</CeramicCapacitorHeight>
+      <CeramicCapacitorPackage>1206</CeramicCapacitorPackage>
+      <CocAtHalfRated>1.69E-06</CocAtHalfRated>
+      <CocAtFullRated>6E-07</CocAtFullRated>
+      <CocAtNoVoltage>1E-05</CocAtNoVoltage>
+      <CocDerated>1.6464E-06</CocDerated>
+      <CocVoltageRating>50</CocVoltageRating>
       <OutputLCFilterEnabled>False</OutputLCFilterEnabled>
       <OutputLCFilterSensingIsLocal>False</OutputLCFilterSensingIsLocal>
       <OutputLCFilterSensingIsRemote>False</OutputLCFilterSensingIsRemote>
-      <RfbTopActual>90910000</RfbTopActual>
-      <RfbBotActual>29091200</RfbBotActual>
-      <CfbTopActual>5.6E-13</CfbTopActual>
-      <CfbBotActual>1.8E-12</CfbBotActual>
-      <FcDesired>333333.333333333</FcDesired>
-      <PhaseBoostDesired>10</PhaseBoostDesired>
+      <Cth>1E-10</Cth>
+      <Cthp>5.1E-12</Cthp>
+      <Rth>100000</Rth>
+      <RfbTopActual>205000</RfbTopActual>
+      <RfbBotActual>6490</RfbBotActual>
+      <CfbTopActual>5.6E-11</CfbTopActual>
+      <CfbBotActual>4.7E-10</CfbBotActual>
+      <FcDesired>20000</FcDesired>
+      <PhaseBoostDesired>20</PhaseBoostDesired>
       <PhaseMarginDesired>60</PhaseMarginDesired>
       <FixedAth>0.8</FixedAth>
       <Ilim>1.1</Ilim>
       <HotSwapCurrentLimitThresholdFoldbackFactor>1</HotSwapCurrentLimitThresholdFoldbackFactor>
-      <Gm>7E-06</Gm>
+      <Gm>0.00096</Gm>
       <Rsense>0.2</Rsense>
       <CurrentSensingConfigurationType>1</CurrentSensingConfigurationType>
-      <SwitchingFreqDesired>2000000</SwitchingFreqDesired>
+      <SwitchingFreqDesired>2005000</SwitchingFreqDesired>
       <Rfreq>15000</Rfreq>
       <Vbias>5</Vbias>
       <HasExtvcc>True</HasExtvcc>
-      <LoadStepHigh>1</LoadStepHigh>
-      <LoadStepSlewRate>10000000</LoadStepSlewRate>
+      <LoadStepHigh>2</LoadStepHigh>
+      <LoadStepSlewRate>1000000</LoadStepSlewRate>
       <TonMin>3E-08</TonMin>
       <ToffMin>6E-08</ToffMin>
       <VinStartUp>34</VinStartUp>
@@ -270,8 +289,9 @@
       <VOV_Latch_Desired>34</VOV_Latch_Desired>
       <VOV_NonLatch_Desired>34</VOV_NonLatch_Desired>
       <RailNumber>2</RailNumber>
-      <BW>14.13</BW>
-      <PM>47.22</PM>
+      <BW>15.85</BW>
+      <PM>90.05</PM>
+      <DeltaVoLoadStep>57.62</DeltaVoLoadStep>
       <FootprintClearanceFactor>1</FootprintClearanceFactor>
       <Mode>Buck</Mode>
       <ModeChanged>False</ModeChanged>
@@ -289,8 +309,8 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.85</Efficiency>
-      <VoutRipplePercent>0.0004351631</VoutRipplePercent>
+      <Efficiency>0.9733</Efficiency>
+      <VoutRipplePercent>0.0021888868</VoutRipplePercent>
       <LossCurveA2>0.1941842913</LossCurveA2>
       <LossCurveA1>0.0118955388</LossCurveA1>
       <LossCurveA0>0.0420859091</LossCurveA0>
