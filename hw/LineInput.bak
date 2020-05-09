@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -152,7 +152,7 @@ LINE_N
 Text HLabel 3100 3600 0    50   Input ~ 0
 LINE_E
 Text Notes 4550 2100 0    50   ~ 0
-Common mode choke?\nPut in part and DNI?\n\nMounting hole for earth to case?
+Common mode choke?\nPut in part and DNI?
 Text Label 7150 3250 0    50   ~ 0
 P
 Text Label 7150 3650 0    50   ~ 0

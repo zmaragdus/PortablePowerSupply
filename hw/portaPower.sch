@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -268,4 +268,15 @@ Text Label 3000 1500 0    50   ~ 0
 P
 Text Label 3000 1750 0    50   ~ 0
 N
+$Sheet
+S 8000 4150 900  800 
+U 5EB6CA11
+F0 "AuxOut" 50
+F1 "AuxOut.sch" 50
+F2 "GND" I R 8900 4800 50 
+F3 "5VAuxSup" I R 8900 4350 50 
+F4 "5VAuxIn" I L 8000 4350 50 
+F5 "AuxEN" I L 8000 4550 50 
+F6 "AuxPG" I L 8000 4700 50 
+$EndSheet
 $EndSCHEMATC
