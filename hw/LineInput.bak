@@ -167,4 +167,8 @@ F 5 "440VAC" H 5550 3800 50  0000 L CNN "VRating"
 $EndComp
 Text Notes 750  1050 0    50   ~ 0
 To Do:\n- part #s for everything except caps\n- packages for everything\n
+Text Label 4750 3200 0    50   ~ 0
+LINEp_fused
+Text Label 3850 3400 0    50   ~ 0
+LINEn
 $EndSCHEMATC

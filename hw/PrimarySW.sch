@@ -504,7 +504,7 @@ Wire Wire Line
 Connection ~ 6800 4800
 Wire Wire Line
 	6800 4500 6750 4500
-Text Notes 6600 4550 0    50   ~ 0
+Text Notes 6850 4600 0    50   ~ 0
 FCM w/ SS
 $Comp
 L Device:C C?
@@ -690,17 +690,6 @@ F 3 "~" H 3250 1750 50  0001 C CNN
 	1    3250 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R?
-U 1 1 5EC4E1C3
-P 3950 1750
-F 0 "R?" H 3700 1800 50  0000 L CNN
-F 1 "100k" H 3700 1700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3990 1740 50  0001 C CNN
-F 3 "~" H 3950 1750 50  0001 C CNN
-	1    3950 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 4000 4900 4000
 Wire Wire Line
@@ -823,4 +812,15 @@ F 3 "" H 8450 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 5000 8450 4900
+$Comp
+L Device:R_US R?
+U 1 1 5EC4E1C3
+P 3950 1750
+F 0 "R?" H 3700 1800 50  0000 L CNN
+F 1 "100k" H 3700 1700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3990 1740 50  0001 C CNN
+F 3 "~" H 3950 1750 50  0001 C CNN
+	1    3950 1750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
