@@ -1,10 +1,5 @@
 <H1> Portable Power Supply </H1>
 
-Project Contacts:
-
-* HW Lead: user "zmaragdus"
-* SW Lead: 
-
 <H3> Motivation </H3>
 
 This project is aimed at designing a portable power supply for lab work. Commercial benchtop supplies are still quite large, and taking one with you for field testing is rather unwieldy. There is a reasonable need for a smaller portable supply that you can stuff in a backpack. Additionally, this sort of unit would provide a good platform for hobbyists and students.

@@ -1,0 +1,3 @@
+
+# ignore KiCad backup files
+hw/design/*.bak
