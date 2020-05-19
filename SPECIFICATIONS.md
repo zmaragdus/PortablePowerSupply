@@ -4,7 +4,7 @@ Below are the overall goals of the project. All other specifications should work
 
 * Total body size should be that of a large laptop charger.
 * Maximum output power should be 25V / 2A on the primary output
-* Output will have CV/CC behavior
+* Output will have adjustable CV/CC behavior
 * Unit will have a small display and knobs/wheels/switches for control & adjustment
 * Output shall be fully isolated from line voltage
 * OPTIONAL: auxiliary 5V/3.3V / 500mA output
@@ -77,3 +77,31 @@ Below are the overall goals of the project. All other specifications should work
 * Digital display must, at minimum, show actual output voltage and current. If additional area / capabilities exist, can also display output setpoints and any active faults (either a numeric code or an explicit statement).
 
 <H3> Software </H3>
+
+
+
+<H2> Documentation </H2>
+
+<H3> Text </H3>
+
+LaTeX will be the primary language used for generating documentation.
+
+The documentation will contain links to the datasheets of all
+
+* ICs
+* non-ceramic capacitors
+* inductors
+* filter components (e.g. ferrite bead)
+* connectors
+* user controls (e.g. buttons and wheels)
+* PCB material specifications
+* other electronic modules (e.g. display unit)
+
+The datasheets for all ICs and modules should be downloaded and stored in the "ds" folder.
+
+<H3> Images </H3>
+
+Images created in a software program will be saved as vector images (.svg) and converted to PDF files for inclusion in the LaTeX files. Use the same filename for both the .svg file and the .pdf file. This allows for batch regeneration of all images.
+
+Photo images shall be saved as JPEG files.
+
