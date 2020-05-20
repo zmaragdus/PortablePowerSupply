@@ -31,11 +31,11 @@
       <PartLength>4</PartLength>
       <PartWidth>3</PartWidth>
       <PartHeight>0.94</PartHeight>
-      <VinToCalc>34</VinToCalc>
+      <VinToCalc>35</VinToCalc>
       <IoToCalc>1.5</IoToCalc>
-      <MaxVin>38</MaxVin>
+      <MaxVin>37</MaxVin>
       <NomVin>36</NomVin>
-      <MinVin>34</MinVin>
+      <MinVin>35</MinVin>
       <SwitchingFreq>2005000</SwitchingFreq>
       <OutputVol>5</OutputVol>
       <OutputCur>1.75</OutputCur>
@@ -47,7 +47,7 @@
       <InductorRipplePercentDesired>40</InductorRipplePercentDesired>
       <Lo>2.2E-06</Lo>
       <DCR>0.02135</DCR>
-      <InductorManufacturer>R. D.COILCRAFT</InductorManufacturer>
+      <InductorManufacturer>COILCRAFT</InductorManufacturer>
       <InductorPartNumber>XFL4020-222MEB</InductorPartNumber>
       <InductorLength>4</InductorLength>
       <InductorWidth>4</InductorWidth>
@@ -131,10 +131,10 @@
       <ToffMin>6E-08</ToffMin>
       <ProjectName>Portable Power Supply</ProjectName>
       <ProjectDesigner>R. D. Smith</ProjectDesigner>
-      <VinStartUp>34</VinStartUp>
-      <VSD_Desired>34</VSD_Desired>
-      <VOV_Latch_Desired>34</VOV_Latch_Desired>
-      <VOV_NonLatch_Desired>34</VOV_NonLatch_Desired>
+      <VinStartUp>35</VinStartUp>
+      <VSD_Desired>35</VSD_Desired>
+      <VOV_Latch_Desired>35</VOV_Latch_Desired>
+      <VOV_NonLatch_Desired>35</VOV_NonLatch_Desired>
       <RailNumber>1</RailNumber>
       <BW>19.95</BW>
       <PM>62.34</PM>
@@ -156,7 +156,7 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.8933</Efficiency>
+      <Efficiency>0.8917</Efficiency>
       <VoutRipplePercent>0.0002593097</VoutRipplePercent>
       <LossCurveA2>0.2067034943</LossCurveA2>
       <LossCurveA1>0.1071731695</LossCurveA1>
@@ -192,11 +192,11 @@
       <PartLength>4</PartLength>
       <PartWidth>3</PartWidth>
       <PartHeight>0.94</PartHeight>
-      <VinToCalc>34</VinToCalc>
+      <VinToCalc>35</VinToCalc>
       <IoToCalc>1</IoToCalc>
-      <MaxVin>38</MaxVin>
+      <MaxVin>37</MaxVin>
       <NomVin>36</NomVin>
-      <MinVin>34</MinVin>
+      <MinVin>35</MinVin>
       <SwitchingFreq>2005000</SwitchingFreq>
       <OutputVol>26.07</OutputVol>
       <OutputCur>2.1</OutputCur>
@@ -242,7 +242,7 @@
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
       <VoStepMaxTargetPercent>2.82875234707203</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
-      <Coc>1.6464E-06</Coc>
+      <Coc>1.643348E-06</Coc>
       <ESRc>0.0041</ESRc>
       <ESLc>5.065E-10</ESLc>
       <Numc>1</Numc>
@@ -255,7 +255,7 @@
       <CocAtHalfRated>1.69E-06</CocAtHalfRated>
       <CocAtFullRated>6E-07</CocAtFullRated>
       <CocAtNoVoltage>1E-05</CocAtNoVoltage>
-      <CocDerated>1.6464E-06</CocDerated>
+      <CocDerated>1.643348E-06</CocDerated>
       <CocVoltageRating>50</CocVoltageRating>
       <OutputLCFilterEnabled>False</OutputLCFilterEnabled>
       <OutputLCFilterSensingIsLocal>False</OutputLCFilterSensingIsLocal>
@@ -284,10 +284,10 @@
       <LoadStepSlewRate>1000000</LoadStepSlewRate>
       <TonMin>3E-08</TonMin>
       <ToffMin>6E-08</ToffMin>
-      <VinStartUp>34</VinStartUp>
-      <VSD_Desired>34</VSD_Desired>
-      <VOV_Latch_Desired>34</VOV_Latch_Desired>
-      <VOV_NonLatch_Desired>34</VOV_NonLatch_Desired>
+      <VinStartUp>35</VinStartUp>
+      <VSD_Desired>35</VSD_Desired>
+      <VOV_Latch_Desired>35</VOV_Latch_Desired>
+      <VOV_NonLatch_Desired>35</VOV_NonLatch_Desired>
       <RailNumber>2</RailNumber>
       <BW>15.85</BW>
       <PM>90.05</PM>
@@ -309,8 +309,8 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.9733</Efficiency>
-      <VoutRipplePercent>0.0021888868</VoutRipplePercent>
+      <Efficiency>0.973</Efficiency>
+      <VoutRipplePercent>0.0021992779</VoutRipplePercent>
       <LossCurveA2>0.1941842913</LossCurveA2>
       <LossCurveA1>0.0118955388</LossCurveA1>
       <LossCurveA0>0.0420859091</LossCurveA0>

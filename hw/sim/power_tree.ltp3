@@ -10,15 +10,15 @@
 	Vout    : 24
 	VoutMin : 22
 	VoutMax : 26
-<BPrt> Resistor, 2, 360, 190, LT4320
+<BPrt> Resistor, 2, 395, 190, LT4320
 	Color   : #FFBC8F8F
 	Width   : 80
 	Height  : 60
-	Resstnce: 0.02
+	Resstnce: 0.07
 	ResType : 1
 <Term> Input, 1
 <Term> Output, 1
-<BPrt> Converter, 5, 570, 190, LT8312
+<BPrt> Converter, 5, 595, 190, LT8312
 	Color   : #FFFFDAB9
 	Width   : 120
 	Height  : 60
@@ -37,10 +37,10 @@
 	Width   : 120
 	Height  : 60
 	PartNumb: LT8653S
-	SizeArea: 217.3
+	SizeArea: 352.8
 	Topology: 1
 	ConvType: 1
-	CadPath : C:\Users\Robet\Documents\ee_projects\portaPower\LT8653S.ltpc
+	CadPath : C:\Users\Robet\Documents\ee_projects\PortablePowerSupply\PortablePowerSupply\hw\sim\LT8653S.ltpc
 	VisType : 1
 <Term> Input, 1
 	VinMin  : 34
@@ -53,9 +53,9 @@
 	IoutMin : 0
 	IoutMax : 1.75
 	pLossSet: 1
-	MatrixA : 0.2067034943, 0.1071731695, 0.219725648
+	MatrixA : 0.2067034943, 0.1071731695, 0.2239172562
 <Term> Output, 2
-	Vout    : 3.3
+	Vout    : 26.07
 	VoutMin : 0.8
 	VoutMax : 40
 	Dropout : 0
@@ -63,22 +63,22 @@
 	IoutMax : 2.1
 	pLossSet: 1
 	MatrixA : 0.1941842913, 0.0118955388, 0.0420859091
-<BPrt> Resistor, 11, 1120, 440, LTC7003
+<BPrt> Resistor, 11, 1160, 440, LTC4361
 	Color   : #FFBC8F8F
 	Width   : 80
 	Height  : 60
-	Resstnce: 0.03
+	Resstnce: 0.05
 <Term> Input, 1
 <Term> Output, 1
-<BPrt> Load, 14, 1310, 440, Aux 5V
+<BPrt> Load, 14, 1395, 440, Aux 5V
 	Color   : #FFFFB6C1
 	Width   : 80
 	Height  : 60
 	VisType : 2
 <Term> Input, 1
 	Inom    : 0.3
-	Ipeak   : 0.75
-<BPrt> Load, 18, 1310, 550, Sys
+	Ipeak   : 0.5
+<BPrt> Load, 18, 1395, 550, Sys
 	Color   : #FFFFB6C1
 	Width   : 80
 	Height  : 60
@@ -87,7 +87,7 @@
 	Inom    : 0.5
 	Ipeak   : 0.75
 	LoadType: False
-<BPrt> Load, 24, 1310, 205, Main Out
+<BPrt> Load, 24, 1395, 205, Main Out
 	Color   : #FFFFB6C1
 	Width   : 80
 	Height  : 60
@@ -106,13 +106,13 @@
 	VinMin  : 1.4
 	VinMax  : 40
 <Term> Output, 1
-	Vout    : 2.3
-	VoutMin : 0.4
+	Vout    : 25.25
+	VoutMin : 23
 	VoutMax : 32
 	Dropout : 0.33
 	IoutMin : 0.001
 	IoutMax : 2.1
-<BPrt> Load, 28, 1310, 295, 1mA Always
+<BPrt> Load, 28, 1375, 295, 1mA Always
 	Color   : #FFFFB6C1
 	Width   : 100
 	Height  : 60
@@ -123,6 +123,67 @@
 	Ipeak   : 2
 	IpeakU  : -3
 	LoadType: False
+<BPrt> Converter, 36, 1120, 685, Converter 36
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	PartNumb: LTC3315A
+	SizeArea: 103.4
+	Topology: 1
+	ConvType: 1
+	CadPath : C:\Users\Robet\Documents\ee_projects\PortablePowerSupply\PortablePowerSupply\hw\sim\LTC3315A.ltpc
+	VisType : 1
+<Term> Input, 1
+	VinMax  : 5.5
+<Term> Output, 1
+	Vout    : 3.31
+	VoutMin : 0.5
+	VoutMax : 5.5
+	Dropout : 0
+	IoutMin : 0
+	IoutMax : 2
+	pLossSet: 1
+	MatrixA : 0.088452, 0.0039619556, 0.0405153753
+<Term> Output, 2
+	Vout    : 1.81
+	VoutMin : 0.5
+	VoutMax : 5.5
+	Dropout : 0
+	IoutMin : 0
+	IoutMax : 2
+	pLossSet: 1
+	MatrixA : 0.0690909091, 0.0027940294, 0.0073707477
+<BPrt> Load, 39, 1395, 670, Load 39
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 1
+	Ipeak   : 1.5
+<BPrt> Load, 40, 1395, 755, Load 40
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.75
+	Ipeak   : 1
+<BPrt> Load, 45, 1160, 295, LDO SYS Current
+	Color   : #FFFFB6C1
+	Width   : 120
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 45
+	InomU   : -3
+	Ipeak   : 90
+	IpeakU  : -3
+	Title   : 
+<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
+	Color   : #FF000000
+	Color2  : #00FFFFFF
+	Thicknss: 24
 <Wire> 4, 3
 	STermPID: 2
 	STermTyp: Input
@@ -130,7 +191,7 @@
 	ETermPID: 1
 	ETermTyp: Output
 	ETermNum: 1
-	Points  : (360,220)(295,220)
+	Points  : (395,220)(295,220)
 <Wire> 7, 6
 	STermPID: 2
 	STermTyp: Output
@@ -138,7 +199,7 @@
 	ETermPID: 5
 	ETermTyp: Input
 	ETermNum: 1
-	Points  : (440,220)(570,220)
+	Points  : (475,220)(595,220)
 <Wire> 10, 9
 	STermPID: 8
 	STermTyp: Input
@@ -146,12 +207,12 @@
 	ETermPID: 5
 	ETermTyp: Output
 	ETermNum: 1
-	Points  : (850,220)(690,220)
+	Points  : (850,220)(715,220)
 <Wire> 13, 12
 	STermPID: 8
 	STermTyp: Output
 	STermNum: 1
-	EWires  : 19, 20
+	EWires  : 20, 38
 	Points  : (970,205)(1050,205)(1050,470)
 <Wire> 16, 15
 	STermPID: 11
@@ -160,42 +221,78 @@
 	ETermPID: 14
 	ETermTyp: Input
 	ETermNum: 1
-	Points  : (1200,470)(1310,470)
+	Points  : (1240,470)(1395,470)
 <Wire> 19, 12
 	STermPID: 18
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 13, 20
-	Points  : (1310,580)(1050,580)(1050,470)
+	EWires  : 37, 38
+	Points  : (1395,580)(1050,580)
 <Wire> 20, 12
 	ETermPID: 11
 	ETermTyp: Input
 	ETermNum: 1
-	SWires  : 19, 13
-	Points  : (1050,470)(1120,470)
+	SWires  : 13, 38
+	Points  : (1050,470)(1160,470)
 <Wire> 30, 29
 	STermPID: 24
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 31, 32
-	Points  : (1310,235)(1265,235)
+	Points  : (1395,235)(1305,235)
 <Wire> 31, 29
 	STermPID: 28
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 30, 32
-	Points  : (1310,325)(1265,325)(1265,235)
+	Points  : (1375,325)(1305,325)(1305,235)
 <Wire> 32, 29
 	ETermPID: 27
 	ETermTyp: Output
 	ETermNum: 1
 	SWires  : 31, 30
-	Points  : (1265,235)(1240,235)
+	Points  : (1305,235)(1240,235)
 <Wire> 34, 33
 	STermPID: 27
 	STermTyp: Input
 	STermNum: 1
+	EWires  : 46, 47
+	Points  : (1120,235)(1095,235)
+<Wire> 37, 12
+	STermPID: 36
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 19, 38
+	Points  : (1120,715)(1050,715)(1050,580)
+<Wire> 38, 12
+	SWires  : 37, 19
+	EWires  : 13, 20
+	Points  : (1050,580)(1050,470)
+<Wire> 42, 41
+	STermPID: 39
+	STermTyp: Input
+	STermNum: 1
+	ETermPID: 36
+	ETermTyp: Output
+	ETermNum: 1
+	Points  : (1395,700)(1240,700)
+<Wire> 44, 43
+	STermPID: 36
+	STermTyp: Output
+	STermNum: 2
+	ETermPID: 40
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (1240,730)(1315,730)(1315,785)(1395,785)
+<Wire> 46, 33
+	STermPID: 45
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 34, 47
+	Points  : (1160,325)(1095,325)(1095,235)
+<Wire> 47, 33
 	ETermPID: 8
 	ETermTyp: Output
 	ETermNum: 2
-	Points  : (1120,235)(970,235)
+	SWires  : 46, 34
+	Points  : (1095,235)(970,235)

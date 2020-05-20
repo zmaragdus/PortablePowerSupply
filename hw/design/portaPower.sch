@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -62,9 +62,9 @@ F2 "Vbus" B L 4300 1500 50
 F3 "GND" B R 5100 1900 50 
 F4 "Vadj" B R 5100 1650 50 
 F5 "5V" B L 4300 1350 50 
-F6 "SYNC" B L 4300 1850 50 
-F7 "PGOOD" B L 4300 1750 50 
-F8 "Vout" B R 5100 1450 50 
+F6 "Vout" B R 5100 1450 50 
+F7 "SW_GOOD" B L 4300 1750 50 
+F8 "5V_GOOD" B L 4300 1900 50 
 $EndSheet
 Wire Wire Line
 	3700 1500 4300 1500
@@ -238,17 +238,6 @@ Text Label 3000 1500 0    50   ~ 0
 P
 Text Label 3000 1850 0    50   ~ 0
 N
-$Sheet
-S 8000 4150 900  800 
-U 5EB6CA11
-F0 "AuxOut" 50
-F1 "AuxOut.sch" 50
-F2 "GND" I R 8900 4800 50 
-F3 "5VAuxSup" I R 8900 4350 50 
-F4 "5VAuxIn" I L 8000 4350 50 
-F5 "AuxEN" I L 8000 4550 50 
-F6 "AuxPG" I L 8000 4700 50 
-$EndSheet
 Wire Wire Line
 	1250 1700 1800 1700
 $Comp
@@ -262,4 +251,71 @@ F 3 "~" H 1450 1600 50  0001 C CNN
 	1    1050 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EC498C7
+P 1450 3800
+F 0 "#PWR?" H 1450 3650 50  0001 C CNN
+F 1 "+5V" H 1300 3900 50  0000 C CNN
+F 2 "" H 1450 3800 50  0001 C CNN
+F 3 "" H 1450 3800 50  0001 C CNN
+	1    1450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3800 1450 3900
+Wire Wire Line
+	1450 3900 1700 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5EC49D4C
+P 2700 4600
+F 0 "#PWR?" H 2700 4350 50  0001 C CNN
+F 1 "GND" H 2705 4427 50  0000 C CNN
+F 2 "" H 2700 4600 50  0001 C CNN
+F 3 "" H 2700 4600 50  0001 C CNN
+	1    2700 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4600 2700 4400
+Wire Wire Line
+	2700 4400 2600 4400
+Text Notes 1400 3200 0    100  ~ 0
+Auxiliary Output &\nSecondary Regulators
+Wire Wire Line
+	4300 1900 4200 1900
+Wire Wire Line
+	4200 1900 4200 2350
+Wire Wire Line
+	4300 1750 4100 1750
+Wire Wire Line
+	4100 1750 4100 2350
+Text Label 4200 2350 1    50   ~ 0
+PriSW_pg1
+Text Label 4100 2350 1    50   ~ 0
+PriSW_pg2
+$Sheet
+S 1700 5450 900  950 
+U 5ECFB146
+F0 "SecRegulators" 50
+F1 "SecRegulators.sch" 50
+F2 "SUP" B L 1700 5650 50 
+F3 "GND" B R 2600 6300 50 
+F4 "EN" B L 1700 5900 50 
+F5 "PGOOD" B L 1700 6150 50 
+F6 "3V3" B R 2600 5650 50 
+F7 "1V8" B R 2600 5900 50 
+$EndSheet
+$Sheet
+S 1700 3750 900  800 
+U 5EB6CA11
+F0 "AuxOut" 50
+F1 "AuxOut.sch" 50
+F2 "AuxPOut" B R 2600 3900 50 
+F3 "GND" B R 2600 4400 50 
+F4 "AuxPIn" B L 1700 3900 50 
+F5 "AuxEN" B L 1700 4200 50 
+F6 "AuxPG" B L 1700 4350 50 
+$EndSheet
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -167,16 +167,16 @@ Wire Wire Line
 Wire Wire Line
 	7600 3350 7600 3450
 Wire Wire Line
-	6400 3500 6300 3500
+	6400 3500 6350 3500
 $Comp
 L power:GND #PWR?
 U 1 1 5E81DFB4
-P 6300 4250
-F 0 "#PWR?" H 6300 4000 50  0001 C CNN
-F 1 "GND" H 6305 4077 50  0000 C CNN
-F 2 "" H 6300 4250 50  0001 C CNN
-F 3 "" H 6300 4250 50  0001 C CNN
-	1    6300 4250
+P 6350 4250
+F 0 "#PWR?" H 6350 4000 50  0001 C CNN
+F 1 "GND" H 6355 4077 50  0000 C CNN
+F 2 "" H 6350 4250 50  0001 C CNN
+F 3 "" H 6350 4250 50  0001 C CNN
+	1    6350 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -254,19 +254,8 @@ Wire Wire Line
 Wire Wire Line
 	4550 2650 4550 4750
 Connection ~ 4550 4750
-$Comp
-L Device:C C?
-U 1 1 5E829D2A
-P 6300 4050
-F 0 "C?" H 6415 4096 50  0000 L CNN
-F 1 "2.2u" H 6415 4005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 3900 50  0001 C CNN
-F 3 "~" H 6300 4050 50  0001 C CNN
-	1    6300 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6300 4200 6300 4250
+	6350 4200 6350 4250
 Wire Wire Line
 	6100 3350 6400 3350
 Wire Wire Line
@@ -276,7 +265,7 @@ L Device:R_US R?
 U 1 1 5E8396C6
 P 8550 3500
 F 0 "R?" H 8482 3454 50  0000 R CNN
-F 1 "R_US" H 8482 3545 50  0000 R CNN
+F 1 "25m" H 8482 3545 50  0000 R CNN
 F 2 "Resistor_SMD:R_0612_1632Metric" V 8590 3490 50  0001 C CNN
 F 3 "~" H 8550 3500 50  0001 C CNN
 	1    8550 3500
@@ -331,7 +320,7 @@ Text HLabel 10600 4100 2    50   BiDi ~ 0
 GND
 Text Notes 2500 1700 0    50   ~ 0
 Active\nRectifier
-Text Notes 6850 1100 0    50   ~ 0
+Text Notes 6850 950  0    50   ~ 0
 PFC Boost\nConverter
 Wire Wire Line
 	2550 1950 4150 1950
@@ -340,7 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 4750 3500 4750
 Connection ~ 5650 4750
-Text Notes 5250 850  0    50   ~ 0
+Text Notes 5300 900  0    50   ~ 0
 FINISH PFC CIRCUIT!!!
 $Comp
 L power:GND #PWR?
@@ -411,8 +400,8 @@ L Device:R_US R?
 U 1 1 5EB6C5FB
 P 9000 2200
 F 0 "R?" H 8932 2154 50  0000 R CNN
-F 1 "R_US" H 8932 2245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9040 2190 50  0001 C CNN
+F 1 "100k" H 8932 2245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9040 2190 50  0001 C CNN
 F 3 "~" H 9000 2200 50  0001 C CNN
 	1    9000 2200
 	-1   0    0    1   
@@ -441,7 +430,7 @@ L Device:R_US R?
 U 1 1 5EB79CBC
 P 9000 2600
 F 0 "R?" H 8932 2554 50  0000 R CNN
-F 1 "R_US" H 8932 2645 50  0000 R CNN
+F 1 "3.6k" H 8932 2645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9040 2590 50  0001 C CNN
 F 3 "~" H 9000 2600 50  0001 C CNN
 	1    9000 2600
@@ -510,11 +499,11 @@ L Device:C C?
 U 1 1 5EBBBEB7
 P 7650 2400
 F 0 "C?" V 7700 2200 50  0000 L CNN
-F 1 "4.7p" V 7800 2200 50  0000 L CNN
+F 1 "22p" V 7800 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7688 2250 50  0001 C CNN
 F 3 "~" H 7650 2400 50  0001 C CNN
 F 4 "findapart" V 7650 2400 50  0001 C CNN "MfrNum"
-F 5 "50V" V 7700 2500 50  0000 L CNN "VRating"
+F 5 "100V" V 7700 2500 50  0000 L CNN "VRating"
 F 6 "0402" V 7800 2500 50  0000 L CNN "Size"
 	1    7650 2400
 	0    1    1    0   
@@ -524,7 +513,7 @@ L Device:R_US R?
 U 1 1 5EBD6503
 P 7250 2400
 F 0 "R?" V 7450 2450 50  0000 R CNN
-F 1 "2k" V 7350 2450 50  0000 R CNN
+F 1 "30k" V 7350 2450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7290 2390 50  0001 C CNN
 F 3 "~" H 7250 2400 50  0001 C CNN
 	1    7250 2400
@@ -555,26 +544,6 @@ Wire Wire Line
 	7800 2400 7900 2400
 Wire Wire Line
 	7900 2400 7900 1750
-Wire Wire Line
-	7900 1750 7600 1750
-Wire Wire Line
-	7600 1750 7600 1550
-Wire Wire Line
-	7600 1550 7450 1550
-Connection ~ 7600 1750
-Wire Wire Line
-	7600 1750 7500 1750
-$Comp
-L Device:R_US R?
-U 1 1 5EC1B479
-P 7300 1550
-F 0 "R?" V 7400 1700 50  0000 R CNN
-F 1 "20" V 7400 1500 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7340 1540 50  0001 C CNN
-F 3 "~" H 7300 1550 50  0001 C CNN
-	1    7300 1550
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5EC22386
@@ -592,10 +561,6 @@ Wire Wire Line
 	6650 2050 6350 2050
 Wire Wire Line
 	6350 2050 6350 2100
-Wire Wire Line
-	7150 1550 7000 1550
-Wire Wire Line
-	6700 1550 6350 1550
 Wire Wire Line
 	6350 1550 6350 2050
 Connection ~ 6350 2050
@@ -658,7 +623,7 @@ Text Label 7800 3050 0    50   ~ 0
 PFC_gate
 Text Label 7950 3300 0    50   ~ 0
 PFC_Isns
-Text Label 6700 1550 2    50   ~ 0
+Text Label 6400 2050 0    50   ~ 0
 PFC_sup
 Text Label 6000 3200 0    50   ~ 0
 PFC_ref
@@ -693,26 +658,14 @@ Wire Wire Line
 	8950 1950 9000 1950
 Connection ~ 9000 1950
 $Comp
-L Device:D_Schottky D?
-U 1 1 5EC29700
-P 6850 1550
-F 0 "D?" H 6850 1766 50  0000 C CNN
-F 1 "D_Schottky" H 6850 1675 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6850 1550 50  0001 C CNN
-F 3 "~" H 6850 1550 50  0001 C CNN
-F 4 "40V" H 6850 1550 50  0001 C CNN "VRating"
-F 5 "100mA" H 6850 1550 50  0001 C CNN "IRating"
-	1    6850 1550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L_Core_Ferrite_Coupled L?
 U 1 1 5EBA7662
 P 7300 1850
-F 0 "L?" H 7150 2000 50  0000 C CNN
-F 1 "L_Core_Ferrite_Coupled" H 7350 2100 50  0000 C CNN
+F 0 "L?" H 7250 1650 50  0000 C CNN
+F 1 "MSD1514-nnn" H 7350 2000 50  0000 C CNN
 F 2 "" H 7300 1850 50  0001 C CNN
 F 3 "~" H 7300 1850 50  0001 C CNN
+F 4 "Coilcraft_MSD1514-nnn" H 7300 1850 50  0001 C CNN "MfrNum"
 	1    7300 1850
 	1    0    0    1   
 $EndComp
@@ -753,14 +706,13 @@ Wire Wire Line
 	5450 1950 5500 1950
 Wire Wire Line
 	6300 1550 6350 1550
-Connection ~ 6350 1550
 Wire Wire Line
 	5500 1550 5500 1950
 Wire Wire Line
 	5500 1550 5650 1550
 Connection ~ 5500 1950
 Wire Wire Line
-	5500 1950 7100 1950
+	5500 1950 5900 1950
 $Comp
 L Device:C C?
 U 1 1 5EBD5535
@@ -803,7 +755,7 @@ F 5 "100mA" H 6150 1550 50  0001 C CNN "IRating"
 	1    6150 1550
 	-1   0    0    -1  
 $EndComp
-Text Label 7650 1750 0    50   ~ 0
+Text Label 7600 1750 0    50   ~ 0
 PFC_auxw
 Text Label 8050 1950 0    50   ~ 0
 PFC_sw
@@ -886,10 +838,10 @@ F 4 "OnSemi_NVTFS5C680NL" H 3400 2850 50  0001 C CNN "MfrNum"
 	1    3400 2850
 	1    0    0    -1  
 $EndComp
-Text Label 6300 3850 1    50   ~ 0
+Text Label 6350 3850 1    50   ~ 0
 PFC_comp
 Wire Wire Line
-	6300 3500 6300 3900
+	6350 3500 6350 3900
 Text Label 7350 3350 0    50   ~ 0
 PFC_vcc
 Text Label 7000 2450 1    50   ~ 0
@@ -973,4 +925,44 @@ F 3 "" H 2550 3700 50  0001 C CNN
 $EndComp
 Text Notes 7500 1900 0    50   ~ 0
 1:1
+$Comp
+L Device:C C?
+U 1 1 5ECCACE5
+P 6350 4050
+AR Path="/5E918E7D/5ECCACE5" Ref="C?"  Part="1" 
+AR Path="/5E80D210/5ECCACE5" Ref="C?"  Part="1" 
+F 0 "C?" H 6600 3900 50  0000 C CNN
+F 1 "1u" H 6600 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6388 3900 50  0001 C CNN
+F 3 "" H 6350 4050 50  0001 C CNN
+F 4 "TDK_CGA4J2X5R1C105K125AA" V 6350 4050 50  0001 C CNN "MfrNum"
+F 5 "16V" H 6650 4100 50  0000 R CNN "VRating"
+F 6 "0805" H 6650 4200 50  0000 R CNN "Size"
+	1    6350 4050
+	-1   0    0    1   
+$EndComp
+Text Notes 3850 7700 0    50   ~ 0
+LT8312 Design Notes\n--------------------------------------\n\nVfb = 1.25V, Vout = 36V\nSet Rtop = 100kohm --> Rbot = 3597ohm\nclosest is 3.6kohm (from E24 series, but can get 1%)\nwith all error, about 1V total tolerance\n\nIsns threshold = 102mV\nRsns = 25mohm --> Ipk =  ~~4A\nmin Ilim = 3% max Ilim --> 0.12A (~~4W min)\n\n\nVin_sns is 360uA at Vin_pk\n24*1.414 = 34V\n34V / 360e-6 = 94444ohm\nclosest is 95.3kohm (E96 series)\n\nLT8312 datasheet doesn't show eqn for selecting L\nuse Coilcraft MSD1582 or MSD1514 (same PCB land)\nstart at about 220uH and test from there\n\ndatasheet recommends 1uF for comp cap\nexamples show 2.2uF
+$Comp
+L Device:R_US R?
+U 1 1 5ECE43F9
+P 5900 2350
+F 0 "R?" H 5800 2400 50  0000 R CNN
+F 1 "95.3k" H 5800 2300 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5940 2340 50  0001 C CNN
+F 3 "~" H 5900 2350 50  0001 C CNN
+	1    5900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2200 5900 1950
+Connection ~ 5900 1950
+Wire Wire Line
+	5900 1950 7100 1950
+Wire Wire Line
+	5900 2500 5900 2800
+Wire Wire Line
+	5900 2800 6400 2800
+Wire Wire Line
+	7500 1750 7900 1750
 $EndSCHEMATC
