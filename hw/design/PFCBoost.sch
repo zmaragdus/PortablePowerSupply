@@ -14,28 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RDSmith:LT4320 U?
-U 1 1 5E811DF1
-P 2550 3700
-F 0 "U?" H 2300 4050 50  0000 C CNN
-F 1 "LT4320" H 2750 3350 50  0000 C CNN
-F 2 "" H 2550 3700 50  0001 C CNN
-F 3 "" H 2550 3700 50  0001 C CNN
-	1    2550 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L RDSmith:LT8312 U?
-U 1 1 5E811E4A
-P 6850 3100
-F 0 "U?" H 7150 3650 50  0000 C CNN
-F 1 "LT8312" H 6800 3100 50  0000 C CNN
-F 2 "" H 7000 3500 50  0001 C CNN
-F 3 "" H 7000 3500 50  0001 C CNN
-	1    6850 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 3700 1600 3700
 Text HLabel 800  3700 0    50   BiDi ~ 0
@@ -132,13 +110,9 @@ Wire Wire Line
 Connection ~ 2550 4750
 Wire Wire Line
 	6800 3700 6800 3850
-Wire Wire Line
-	6800 3850 6700 3850
 Connection ~ 6700 3850
 Wire Wire Line
 	6700 3850 6700 3700
-Wire Wire Line
-	6800 3850 6900 3850
 Wire Wire Line
 	7100 3850 7100 3700
 Connection ~ 6800 3850
@@ -146,12 +120,8 @@ Wire Wire Line
 	7000 3700 7000 3850
 Connection ~ 7000 3850
 Wire Wire Line
-	7000 3850 7100 3850
-Wire Wire Line
 	6900 3700 6900 3850
 Connection ~ 6900 3850
-Wire Wire Line
-	6900 3850 7000 3850
 $Comp
 L power:GND #PWR?
 U 1 1 5E81A6ED
@@ -971,4 +941,36 @@ Wire Wire Line
 Connection ~ 7350 3050
 Wire Wire Line
 	7350 3050 8250 3050
+Wire Wire Line
+	7000 3850 7100 3850
+Wire Wire Line
+	6900 3850 7000 3850
+Wire Wire Line
+	6800 3850 6900 3850
+Wire Wire Line
+	6800 3850 6700 3850
+$Comp
+L pps_klib:LT8312 U?
+U 1 1 5EC4C651
+P 6850 3100
+F 0 "U?" H 6750 3650 50  0000 C CNN
+F 1 "LT8312" H 6800 3100 50  0000 C CNN
+F 2 "" H 7000 3500 50  0001 C CNN
+F 3 "" H 7000 3500 50  0001 C CNN
+	1    6850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pps_klib:LT4320 U?
+U 1 1 5EC55A62
+P 2550 3700
+F 0 "U?" H 2300 4050 50  0000 C CNN
+F 1 "LT4320" H 2750 3350 50  0000 C CNN
+F 2 "" H 2550 3700 50  0001 C CNN
+F 3 "" H 2550 3700 50  0001 C CNN
+	1    2550 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 7500 1900 0    50   ~ 0
+1:1
 $EndSCHEMATC

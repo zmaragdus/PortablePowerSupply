@@ -20,7 +20,7 @@ U 5E80D210
 F0 "PFCBoost" 50
 F1 "PFCBoost.sch" 50
 F2 "P" B L 3100 1500 50 
-F3 "N" B L 3100 1750 50 
+F3 "N" B L 3100 1850 50 
 F4 "Vbus" B R 3700 1500 50 
 F5 "GND" B R 3700 1900 50 
 $EndSheet
@@ -29,47 +29,17 @@ S 1800 1300 750  700
 U 5E80D1C0
 F0 "LineInput" 50
 F1 "LineInput.sch" 50
-F2 "N" B R 2550 1750 50 
+F2 "N" B R 2550 1850 50 
 F3 "P" B R 2550 1500 50 
-F4 "LINE_P" I L 1800 1400 50 
-F5 "LINE_N" I L 1800 1600 50 
-F6 "LINE_E" I L 1800 1800 50 
+F4 "LINE_P" I L 1800 1500 50 
+F5 "LINE_N" I L 1800 1700 50 
 $EndSheet
 Wire Wire Line
-	2550 1750 3100 1750
+	2550 1850 3100 1850
 Wire Wire Line
 	2550 1500 3100 1500
-$Comp
-L Connector:Conn_WallPlug_Earth P?
-U 1 1 5E81BB36
-P 950 1500
-F 0 "P?" H 1015 1825 50  0000 C CNN
-F 1 "Conn_WallPlug_Earth" H 1015 1734 50  0000 C CNN
-F 2 "" H 1350 1500 50  0001 C CNN
-F 3 "~" H 1350 1500 50  0001 C CNN
-	1    950  1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1250 1400 1800 1400
-Wire Wire Line
-	1250 1600 1800 1600
-Wire Wire Line
-	1250 1800 1800 1800
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5E81BC25
-P 1250 2150
-F 0 "H?" H 1350 2350 50  0000 R CNN
-F 1 "MountingHole_Pad" H 1350 2450 50  0000 R CNN
-F 2 "" H 1250 2150 50  0001 C CNN
-F 3 "~" H 1250 2150 50  0001 C CNN
-	1    1250 2150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1250 2050 1250 1800
-Connection ~ 1250 1800
+	1250 1500 1800 1500
 $Comp
 L power:GND #PWR?
 U 1 1 5E81BCEE
@@ -81,7 +51,7 @@ F 3 "" H 3750 2100 50  0001 C CNN
 	1    3750 2100
 	1    0    0    -1  
 $EndComp
-Text Notes 2650 1700 0    50   ~ 0
+Text Notes 2650 1750 0    50   ~ 0
 24VAC\nIsolated
 $Sheet
 S 4300 1300 800  700 
@@ -204,7 +174,7 @@ F12 "~ALT_2C" B L 4150 3550 50
 F13 "~ALT_2E" B L 4150 3650 50 
 F14 "LDO_EN" B R 5150 3600 50 
 $EndSheet
-Text Notes 1250 1550 0    50   ~ 0
+Text Notes 1350 1650 0    50   ~ 0
 Line AC
 Wire Wire Line
 	5150 3150 5350 3150
@@ -266,7 +236,7 @@ Text Label 3950 1500 0    50   ~ 0
 36V
 Text Label 3000 1500 0    50   ~ 0
 P
-Text Label 3000 1750 0    50   ~ 0
+Text Label 3000 1850 0    50   ~ 0
 N
 $Sheet
 S 8000 4150 900  800 
@@ -279,4 +249,17 @@ F4 "5VAuxIn" I L 8000 4350 50
 F5 "AuxEN" I L 8000 4550 50 
 F6 "AuxPG" I L 8000 4700 50 
 $EndSheet
+Wire Wire Line
+	1250 1700 1800 1700
+$Comp
+L Connector:Conn_WallPlug P?
+U 1 1 5EC5A887
+P 1050 1600
+F 0 "P?" H 1065 1925 50  0000 C CNN
+F 1 "Conn_WallPlug" H 1065 1834 50  0000 C CNN
+F 2 "" H 1450 1600 50  0001 C CNN
+F 3 "~" H 1450 1600 50  0001 C CNN
+	1    1050 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
