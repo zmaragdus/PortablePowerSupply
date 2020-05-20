@@ -1,7 +1,7 @@
 <Vers> 3.3.4
 <Tabs> 1, #FFFDF5E6, New Tab 1
 <Summ> 215, 300, 24, #FF000000, #00FFFFFF
-<BPrt> Power, 1, 215, 190, Power 1
+<BPrt> Power, 1, 85, 190, Power 1
 	Color   : #00FFFFFF
 	Width   : 80
 	Height  : 60
@@ -10,16 +10,16 @@
 	Vout    : 24
 	VoutMin : 22
 	VoutMax : 26
-<BPrt> Resistor, 2, 395, 190, LT4320
-	Color   : #FFBC8F8F
+<BPrt> Resistor, 2, 300, 190, LT4320
+	Color   : #FFDC143C
 	Width   : 80
 	Height  : 60
 	Resstnce: 0.07
 	ResType : 1
 <Term> Input, 1
 <Term> Output, 1
-<BPrt> Converter, 5, 595, 190, LT8312
-	Color   : #FFFFDAB9
+<BPrt> Converter, 5, 490, 190, LT8312
+	Color   : #FFDC143C
 	Width   : 120
 	Height  : 60
 	PartNumb: LT8312
@@ -32,8 +32,8 @@
 	Vout    : 36
 	VoutMax : 40
 	IoutMax : 2
-<BPrt> Converter, 8, 850, 190, LT8653S
-	Color   : #FFFFDAB9
+<BPrt> Converter, 8, 735, 190, LT8653S
+	Color   : #FFDC143C
 	Width   : 120
 	Height  : 60
 	PartNumb: LT8653S
@@ -64,31 +64,33 @@
 	pLossSet: 1
 	MatrixA : 0.1941842913, 0.0118955388, 0.0420859091
 <BPrt> Resistor, 11, 1160, 440, LTC4361
-	Color   : #FFBC8F8F
+	Color   : #FFFF7F50
 	Width   : 80
 	Height  : 60
 	Resstnce: 0.05
+	ResType : 1
 <Term> Input, 1
 <Term> Output, 1
 <BPrt> Load, 14, 1395, 440, Aux 5V
-	Color   : #FFFFB6C1
+	Color   : #FFFF7F50
 	Width   : 80
 	Height  : 60
 	VisType : 2
 <Term> Input, 1
 	Inom    : 0.3
 	Ipeak   : 0.5
-<BPrt> Load, 18, 1395, 550, Sys
-	Color   : #FFFFB6C1
-	Width   : 80
+<BPrt> Load, 18, 1395, 550, Display LED
+	Color   : #FF6495ED
+	Width   : 90
 	Height  : 60
 	VisType : 2
 <Term> Input, 1
-	Inom    : 0.5
-	Ipeak   : 0.75
-	LoadType: False
+	Inom    : 20
+	InomU   : -3
+	Ipeak   : 30
+	IpeakU  : -3
 <BPrt> Load, 24, 1395, 205, Main Out
-	Color   : #FFFFB6C1
+	Color   : #FFDC143C
 	Width   : 80
 	Height  : 60
 	VisType : 2
@@ -97,7 +99,7 @@
 	Ipeak   : 2.1
 	LoadType: False
 <BPrt> LDO, 27, 1120, 205, LT3086
-	Color   : #FFBDB76B
+	Color   : #FFDC143C
 	Width   : 120
 	Height  : 60
 	PartNumb: LT3086
@@ -113,7 +115,7 @@
 	IoutMin : 0.001
 	IoutMax : 2.1
 <BPrt> Load, 28, 1375, 295, 1mA Always
-	Color   : #FFFFB6C1
+	Color   : #FFDC143C
 	Width   : 100
 	Height  : 60
 	VisType : 2
@@ -123,7 +125,7 @@
 	Ipeak   : 2
 	IpeakU  : -3
 	LoadType: False
-<BPrt> Converter, 36, 1120, 685, Converter 36
+<BPrt> Converter, 36, 1040, 800, Converter 36
 	Color   : #FFFFDAB9
 	Width   : 120
 	Height  : 60
@@ -153,15 +155,16 @@
 	IoutMax : 2
 	pLossSet: 1
 	MatrixA : 0.0690909091, 0.0027940294, 0.0073707477
-<BPrt> Load, 39, 1395, 670, Load 39
-	Color   : #FFFFB6C1
-	Width   : 80
+<BPrt> Load, 39, 1515, 785, Display Sys
+	Color   : #FF6495ED
+	Width   : 90
 	Height  : 60
 	VisType : 2
 <Term> Input, 1
-	Inom    : 1
-	Ipeak   : 1.5
-<BPrt> Load, 40, 1395, 755, Load 40
+	Inom    : 120
+	Ipeak   : 150
+	IpeakU  : -3
+<BPrt> Load, 40, 1395, 960, ???
 	Color   : #FFFFB6C1
 	Width   : 80
 	Height  : 60
@@ -169,8 +172,8 @@
 <Term> Input, 1
 	Inom    : 0.75
 	Ipeak   : 1
-<BPrt> Load, 45, 1160, 295, LDO SYS Current
-	Color   : #FFFFB6C1
+<BPrt> Load, 45, 1120, 295, LDO SYS Current
+	Color   : #FFDC143C
 	Width   : 120
 	Height  : 60
 	VisType : 2
@@ -180,7 +183,53 @@
 	Ipeak   : 90
 	IpeakU  : -3
 	Title   : 
-<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
+<BPrt> Load, 48, 1395, 865, ???
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.75
+	Ipeak   : 1
+<BPrt> Load, 51, 1395, 655, DACs
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	InomU   : -3
+	Ipeak   : 20
+	IpeakU  : -3
+<BPrt> Resistor, 52, 1160, 655, BEAD
+	Color   : #FFBC8F8F
+	Width   : 80
+	Height  : 60
+	Resstnce: 0.035
+	ResType : 5
+<Term> Input, 1
+<Term> Output, 1
+<BPrt> Resistor, 57, 1335, 785, BEAD
+	Color   : #FFBC8F8F
+	Width   : 80
+	Height  : 60
+	Resstnce: 0.035
+	ResType : 5
+<Term> Input, 1
+<Term> Output, 1
+<BPrt> Converter, 62, 1120, 550, Onboard CC Boost
+	Color   : #FF6495ED
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 22
+	VoutMin : 20
+	VoutMax : 25
+	IoutMax : 0.04
+	NomEff  : 70
+	PeakEff : 80
+<Symb> Rectangle, 0, 0, 0, 0,0, 0,0
 	Color   : #FF000000
 	Color2  : #00FFFFFF
 	Thicknss: 24
@@ -191,7 +240,7 @@
 	ETermPID: 1
 	ETermTyp: Output
 	ETermNum: 1
-	Points  : (395,220)(295,220)
+	Points  : (300,220)(165,220)
 <Wire> 7, 6
 	STermPID: 2
 	STermTyp: Output
@@ -199,7 +248,7 @@
 	ETermPID: 5
 	ETermTyp: Input
 	ETermNum: 1
-	Points  : (475,220)(595,220)
+	Points  : (380,220)(490,220)
 <Wire> 10, 9
 	STermPID: 8
 	STermTyp: Input
@@ -207,13 +256,13 @@
 	ETermPID: 5
 	ETermTyp: Output
 	ETermNum: 1
-	Points  : (850,220)(715,220)
+	Points  : (735,220)(610,220)
 <Wire> 13, 12
 	STermPID: 8
 	STermTyp: Output
 	STermNum: 1
-	EWires  : 20, 38
-	Points  : (970,205)(1050,205)(1050,470)
+	EWires  : 20, 66
+	Points  : (855,205)(970,205)(970,470)
 <Wire> 16, 15
 	STermPID: 11
 	STermTyp: Output
@@ -222,18 +271,12 @@
 	ETermTyp: Input
 	ETermNum: 1
 	Points  : (1240,470)(1395,470)
-<Wire> 19, 12
-	STermPID: 18
-	STermTyp: Input
-	STermNum: 1
-	EWires  : 37, 38
-	Points  : (1395,580)(1050,580)
 <Wire> 20, 12
 	ETermPID: 11
 	ETermTyp: Input
 	ETermNum: 1
-	SWires  : 13, 38
-	Points  : (1050,470)(1160,470)
+	SWires  : 13, 66
+	Points  : (970,470)(1160,470)
 <Wire> 30, 29
 	STermPID: 24
 	STermTyp: Input
@@ -257,25 +300,17 @@
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 46, 47
-	Points  : (1120,235)(1095,235)
+	Points  : (1120,235)(1050,235)
 <Wire> 37, 12
 	STermPID: 36
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 19, 38
-	Points  : (1120,715)(1050,715)(1050,580)
+	EWires  : 55, 38
+	Points  : (1040,830)(970,830)(970,685)
 <Wire> 38, 12
-	SWires  : 37, 19
-	EWires  : 13, 20
-	Points  : (1050,580)(1050,470)
-<Wire> 42, 41
-	STermPID: 39
-	STermTyp: Input
-	STermNum: 1
-	ETermPID: 36
-	ETermTyp: Output
-	ETermNum: 1
-	Points  : (1395,700)(1240,700)
+	SWires  : 55, 37
+	EWires  : 65, 66
+	Points  : (970,685)(970,580)
 <Wire> 44, 43
 	STermPID: 36
 	STermTyp: Output
@@ -283,16 +318,74 @@
 	ETermPID: 40
 	ETermTyp: Input
 	ETermNum: 1
-	Points  : (1240,730)(1315,730)(1315,785)(1395,785)
+	Points  : (1160,845)(1220,845)(1220,990)(1395,990)
 <Wire> 46, 33
 	STermPID: 45
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 34, 47
-	Points  : (1160,325)(1095,325)(1095,235)
+	Points  : (1120,325)(1050,325)(1050,235)
 <Wire> 47, 33
 	ETermPID: 8
 	ETermTyp: Output
 	ETermNum: 2
 	SWires  : 46, 34
-	Points  : (1095,235)(970,235)
+	Points  : (1050,235)(855,235)
+<Wire> 49, 41
+	STermPID: 48
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 60, 61
+	Points  : (1395,895)(1245,895)(1245,815)
+<Wire> 54, 53
+	STermPID: 52
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 51
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (1240,685)(1395,685)
+<Wire> 55, 12
+	STermPID: 52
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 37, 38
+	Points  : (1160,685)(970,685)
+<Wire> 59, 58
+	STermPID: 57
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 39
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (1415,815)(1515,815)
+<Wire> 60, 41
+	STermPID: 57
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 49, 61
+	Points  : (1335,815)(1245,815)
+<Wire> 61, 41
+	ETermPID: 36
+	ETermTyp: Output
+	ETermNum: 1
+	SWires  : 60, 49
+	Points  : (1245,815)(1160,815)
+<Wire> 64, 63
+	STermPID: 62
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 18
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (1240,580)(1395,580)
+<Wire> 65, 12
+	STermPID: 62
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 38, 66
+	Points  : (1120,580)(970,580)
+<Wire> 66, 12
+	SWires  : 65, 38
+	EWires  : 13, 20
+	Points  : (970,580)(970,470)
