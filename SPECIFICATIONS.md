@@ -1,4 +1,4 @@
-<H2> Overall functions / specifications of the system </H2>
+<H2> Top-Level Goals </H2>
 
 Below are the overall goals of the project. All other specifications should work toward fulfilling these top-level specifications
 
@@ -9,21 +9,19 @@ Below are the overall goals of the project. All other specifications should work
 * Output shall be fully isolated from line voltage
 * OPTIONAL: auxiliary 5V/3.3V / 500mA output
 
-<H2> Subsystem Functions </H2>
-
-<H3> Power Path / Conversion </H3>
+<H2> Power Path / Conversion </H2>
 
 <H4> Line Input </H4>
 
 * Should be "universal" power input (100-250VAC, 47-63Hz)
 * Development testing will show if X & Y capacitors and/or common-mode chokes are required.
+* Will use isolation transformer with adjustable input taps for 120VAC or 240VAC, will produce 24VAC output
 
 <H4> Primary AC Conversion </H4>
 
-* Diode bridge will rectify line voltage.
-* PFC boost converter will produce 400VDC from line voltage. This allows for compatibility with both 120VAC and 240VAC input.
+* Active bridge rectifier will convert 24VAC to rectified 24V
+* PFC boost converter will produce 36VDC from rectified 24V. 
 * PFC circuit must accommodate both 50Hz and 60Hz
-* Flyback converter from 400V will produce 30V / 2.5A isolated output.
 
 <H4> Primary Switching Regulator </H4>
 
@@ -47,13 +45,13 @@ Below are the overall goals of the project. All other specifications should work
 * Layer 2 is full ground plane, no gaps / cutouts / moats. Routing discipline will be used to effect minimal interference between power, analog, and digital sections.
 * Vias should not be soldermasked over unless properly plugged/filled.
 
-<H3> Mechanical / User </H3>
+<H2> Mechanical / User </H2>
 
 <H4> Line Input </H4>
 
-* C8 laptop plug on PS body, C8 laptop cord to wall
-* AC line input will be fused: 1A fast-blow, user-replaceable (glass 5x20mm?)
-* No ground fault monitoring (proposal for GFCI?)
+* If a non-grounded connection is acceptable, plug will be IEC C8. If ground is necessary, plug will be IEC C6
+* AC line input will be switch-toggled and protected (circuit breaker or user-replacable fuse, 1A)
+* No ground fault monitoring.
 
 <H4> Housing </H4>
 
@@ -76,13 +74,13 @@ Below are the overall goals of the project. All other specifications should work
 * LED indicator for power states: LED on for output activated, LED off for output deactivated, and LED blinking for fault.
 * Digital display must, at minimum, show actual output voltage and current. If additional area / capabilities exist, can also display output setpoints and any active faults (either a numeric code or an explicit statement).
 
-<H3> Software </H3>
+<H2> Software </H2>
 
 
 
 <H2> Documentation </H2>
 
-<H3> Text </H3>
+<H4> Text </H4>
 
 LaTeX will be the primary language used for generating documentation.
 
@@ -99,7 +97,7 @@ The documentation will contain links to the datasheets of all
 
 The datasheets for all ICs and modules should be downloaded and stored in the "ds" folder.
 
-<H3> Images </H3>
+<H4> Images </H4>
 
 Images created in a software program will be saved as vector images (.svg) and converted to PDF files for inclusion in the LaTeX files. Use the same filename for both the .svg file and the .pdf file. This allows for batch regeneration of all images.
 
