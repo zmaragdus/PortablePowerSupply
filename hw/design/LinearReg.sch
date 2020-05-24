@@ -374,4 +374,23 @@ Wire Wire Line
 Connection ~ 7350 2150
 Wire Wire Line
 	7350 2150 7900 2150
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5ECDC050
+P 3100 4000
+AR Path="/5E80D1C0/5ECDC050" Ref="TP?"  Part="1" 
+AR Path="/5E80D210/5ECDC050" Ref="TP?"  Part="1" 
+AR Path="/5E84FADE/5ECDC050" Ref="TP?"  Part="1" 
+AR Path="/5ECFB146/5ECDC050" Ref="TP?"  Part="1" 
+AR Path="/5E917C1A/5ECDC050" Ref="TP?"  Part="1" 
+F 0 "TP?" H 3050 4300 50  0000 L CNN
+F 1 "GND" H 3050 4200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 3300 4000 50  0001 C CNN
+F 3 "~" H 3300 4000 50  0001 C CNN
+	1    3100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4000 3100 4150
+Connection ~ 3100 4150
 $EndSCHEMATC

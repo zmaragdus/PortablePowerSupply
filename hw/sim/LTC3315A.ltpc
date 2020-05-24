@@ -8,7 +8,7 @@
       <PartName>LTC3315A</PartName>
       <IcTa>25</IcTa>
       <LastSavedFilesCultureInfo>en-US</LastSavedFilesCultureInfo>
-      <SolutionAreamm2>103.4</SolutionAreamm2>
+      <SolutionAreamm2>80.1</SolutionAreamm2>
       <SolutionComponentCount>8</SolutionComponentCount>
       <SolutionMaxHeightmm>2.8</SolutionMaxHeightmm>
     </ConverterSpec>
@@ -55,24 +55,34 @@
       <InductorIsat>4.7</InductorIsat>
       <InductorIheat>4.1</InductorIheat>
       <InductorTheat>40</InductorTheat>
-      <Cin>0.00022</Cin>
-      <CinESR>0.018</CinESR>
-      <CinESL>1.6E-09</CinESL>
+      <Cin>2.2E-05</Cin>
+      <CinESR>0.002</CinESR>
+      <CinESL>1.14E-09</CinESL>
       <NCin>1</NCin>
-      <CinManufacturer>PANASONIC</CinManufacturer>
-      <CinPartNumber>6TPE220MI</CinPartNumber>
-      <CinPackage>D2E</CinPackage>
-      <CinLength>7.3</CinLength>
-      <CinWidth>4.3</CinWidth>
-      <CinHeight>1.8</CinHeight>
-      <CinAtHalfRated>0.00022</CinAtHalfRated>
-      <CinAtFullRated>0.00022</CinAtFullRated>
-      <CinAtNoVoltage>0.00022</CinAtNoVoltage>
-      <CinVoltageRating>6.3</CinVoltageRating>
-      <CinCeramic>7E-06</CinCeramic>
-      <CinCeramicESR>0.006</CinCeramicESR>
+      <CinManufacturer>TDK</CinManufacturer>
+      <CinPartNumber>C3225X5R1C226M</CinPartNumber>
+      <CinPackage>1210</CinPackage>
+      <CinLength>3.2</CinLength>
+      <CinWidth>2.5</CinWidth>
+      <CinHeight>2.8</CinHeight>
+      <CinAtHalfRated>1.79E-05</CinAtHalfRated>
+      <CinAtFullRated>1.06E-05</CinAtFullRated>
+      <CinAtNoVoltage>2.2E-05</CinAtNoVoltage>
+      <CinVoltageRating>16</CinVoltageRating>
+      <CinCeramic>1E-06</CinCeramic>
+      <CinCeramicESR>0.032</CinCeramicESR>
+      <CinCeramicESL>2.05E-10</CinCeramicESL>
       <NCinCeramic>2</NCinCeramic>
-      <CinCeramicAtNoVoltage>1E-05</CinCeramicAtNoVoltage>
+      <CinCeramicManufacturer>MURATA</CinCeramicManufacturer>
+      <CinCeramicPartNumber>GRM155R70J105KA12</CinCeramicPartNumber>
+      <CinCeramicPackage>0402</CinCeramicPackage>
+      <CinCeramicLength>1</CinCeramicLength>
+      <CinCeramicWidth>0.5</CinCeramicWidth>
+      <CinCeramicHeight>0.6</CinCeramicHeight>
+      <CinCeramicAtHalfRated>5.8E-07</CinCeramicAtHalfRated>
+      <CinCeramicAtFullRated>2.8E-07</CinCeramicAtFullRated>
+      <CinCeramicAtNoVoltage>1E-06</CinCeramicAtNoVoltage>
+      <CinCeramicVoltageRating>6.3</CinCeramicVoltageRating>
       <Cob>0.00033</Cob>
       <ESRb>0.009</ESRb>
       <ESLb>2E-09</ESLb>
@@ -138,7 +148,7 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.9427</Efficiency>
+      <Efficiency>0.9428</Efficiency>
       <VoutRipplePercent>0.0009175629</VoutRipplePercent>
       <LossCurveA2>0.088452</LossCurveA2>
       <LossCurveA1>0.0039619556</LossCurveA1>
@@ -147,8 +157,10 @@
       <InputLCFilterEnabled>False</InputLCFilterEnabled>
       <NumCf_in>1</NumCf_in>
       <NumCd_in>1</NumCd_in>
+      <Rd1_in>-1000000</Rd1_in>
       <Rd2_in>1000000000</Rd2_in>
       <NumCd3>1</NumCd3>
+      <Rd3>-1000000</Rd3>
       <PartFamily>Switching Regulator</PartFamily>
     </OutputRailData>
     <OutputRailData>
@@ -181,12 +193,13 @@
       <InductorIsat>4.7</InductorIsat>
       <InductorIheat>4.1</InductorIheat>
       <InductorTheat>40</InductorTheat>
-      <Cin>0.00022</Cin>
-      <CinESR>0.018</CinESR>
-      <CinESL>1.6E-09</CinESL>
+      <Cin>2.2E-05</Cin>
+      <CinESR>0.002</CinESR>
+      <CinESL>1.14E-09</CinESL>
       <NCin>1</NCin>
-      <CinCeramic>7E-06</CinCeramic>
-      <CinCeramicESR>0.006</CinCeramicESR>
+      <CinCeramic>1E-06</CinCeramic>
+      <CinCeramicESR>0.032</CinCeramicESR>
+      <CinCeramicESL>2.05E-10</CinCeramicESL>
       <NCinCeramic>2</NCinCeramic>
       <Cob>0.00033</Cob>
       <ESRb>0.009</ESRb>
@@ -253,7 +266,7 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.9126</Efficiency>
+      <Efficiency>0.9128</Efficiency>
       <VoutRipplePercent>0.0017319679</VoutRipplePercent>
       <LossCurveA2>0.0690909091</LossCurveA2>
       <LossCurveA1>0.0027940294</LossCurveA1>
@@ -262,8 +275,10 @@
       <InputLCFilterEnabled>False</InputLCFilterEnabled>
       <NumCf_in>1</NumCf_in>
       <NumCd_in>1</NumCd_in>
+      <Rd1_in>-1000000</Rd1_in>
       <Rd2_in>1000000000</Rd2_in>
       <NumCd3>1</NumCd3>
+      <Rd3>-1000000</Rd3>
       <PartFamily>Switching Regulator</PartFamily>
     </OutputRailData>
   </OutputRailDatas>

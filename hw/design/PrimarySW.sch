@@ -49,7 +49,7 @@ U 1 1 5E88D605
 P 7200 3200
 F 0 "C?" H 7300 3300 50  0000 L CNN
 F 1 "22u" H 7300 3200 50  0000 L CNN
-F 2 "" H 7238 3050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 7238 3050 50  0001 C CNN
 F 3 "~" H 7200 3200 50  0001 C CNN
 F 4 "TDK_C3225X5R1C226K250AA" H 7200 3200 50  0001 C CNN "MfrNum"
 F 5 "16V" H 7300 3100 50  0000 L CNN "VRating"
@@ -89,7 +89,7 @@ U 1 1 5E88DACE
 P 7550 4250
 F 0 "C?" H 7650 4350 50  0000 L CNN
 F 1 "10u" H 7650 4250 50  0000 L CNN
-F 2 "" H 7588 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7588 4100 50  0001 C CNN
 F 3 "~" H 7550 4250 50  0001 C CNN
 F 4 "Murata_GRT31CR61H106ME01" H 7550 4250 50  0001 C CNN "MfrNum"
 F 5 "50V" H 7650 4150 50  0000 L CNN "VRating"
@@ -145,7 +145,7 @@ U 1 1 5E88E274
 P 8450 4250
 F 0 "R?" H 8518 4296 50  0000 L CNN
 F 1 "205k" H 8518 4205 50  0000 L CNN
-F 2 "" V 8490 4240 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 4240 50  0001 C CNN
 F 3 "~" H 8450 4250 50  0001 C CNN
 	1    8450 4250
 	1    0    0    -1  
@@ -156,7 +156,7 @@ U 1 1 5E88E2A2
 P 8450 4750
 F 0 "R?" H 8518 4796 50  0000 L CNN
 F 1 "11.5k" H 8518 4705 50  0000 L CNN
-F 2 "" V 8490 4740 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 4740 50  0001 C CNN
 F 3 "~" H 8450 4750 50  0001 C CNN
 	1    8450 4750
 	1    0    0    -1  
@@ -450,7 +450,7 @@ L Device:R_US R?
 U 1 1 5E8FB958
 P 3750 4150
 F 0 "R?" H 3500 4200 50  0000 L CNN
-F 1 "R_US" H 3500 4100 50  0000 L CNN
+F 1 "2940" H 3500 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3790 4140 50  0001 C CNN
 F 3 "~" H 3750 4150 50  0001 C CNN
 	1    3750 4150
@@ -522,9 +522,10 @@ L Device:R_US R?
 U 1 1 5E9023EC
 P 3750 3750
 F 0 "R?" H 3500 3800 50  0000 L CNN
-F 1 "R_US" H 3500 3700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3790 3740 50  0001 C CNN
+F 1 "100k" H 3500 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3790 3740 50  0001 C CNN
 F 3 "~" H 3750 3750 50  0001 C CNN
+F 4 "0603" H 3500 3600 50  0000 L CNN "Size"
 	1    3750 3750
 	1    0    0    -1  
 $EndComp
@@ -536,7 +537,7 @@ U 1 1 5EB7D5CF
 P 7600 3200
 F 0 "C?" H 7700 3300 50  0000 L CNN
 F 1 "22u" H 7700 3200 50  0000 L CNN
-F 2 "" H 7638 3050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 7638 3050 50  0001 C CNN
 F 3 "~" H 7600 3200 50  0001 C CNN
 F 4 "TDK_C3225X5R1C226K250AA" H 7600 3200 50  0001 C CNN "MfrNum"
 F 5 "16V" H 7700 3100 50  0000 L CNN "VRating"
@@ -623,31 +624,16 @@ F 5 "0402" H 4500 4450 50  0000 L CNN "Size"
 	1    4400 4700
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5EC2E4DE
-P 4900 5700
-F 0 "C?" H 5050 5800 50  0000 L CNN
-F 1 "5.1p" H 5050 5700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 5550 50  0001 C CNN
-F 3 "~" H 4900 5700 50  0001 C CNN
-F 4 "10V" H 5050 5600 50  0000 L CNN "VRating"
-F 5 "0402" H 5050 5500 50  0000 L CNN "Size"
-	1    4900 5700
-	-1   0    0    -1  
-$EndComp
 Text Label 7700 4800 0    50   ~ 0
 PriSW_fb
 Text Label 8050 4000 0    50   ~ 0
 PriSW_out
 Text Label 5450 5150 0    50   ~ 0
 PriSW_vcc
-Text Label 4900 5250 0    50   ~ 0
+Text Label 5150 5200 1    50   ~ 0
 PriSW_comp
-Text Label 4650 4400 0    50   ~ 0
+Text Label 4950 4400 0    50   ~ 0
 PriSW_ss1
-Text Label 4650 4500 0    50   ~ 0
-PriSW_ss2
 Text Label 4000 3750 0    50   ~ 0
 PriSW_EN
 Text Label 2000 3500 0    50   ~ 0
@@ -679,8 +665,6 @@ F 3 "~" H 3250 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 4000 4900 4000
-Wire Wire Line
-	4900 3900 5550 3900
 Text Label 4900 3900 0    50   ~ 0
 PriSW_pg1
 Text Label 4900 4000 0    50   ~ 0
@@ -690,12 +674,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 1450 3050 1450
 Wire Wire Line
-	3250 1450 3950 1450
-Wire Wire Line
 	3950 1450 3950 1600
-Connection ~ 3250 1450
-Text Label 3050 1450 0    50   ~ 0
-5V
 Wire Wire Line
 	3250 1900 3250 2000
 Wire Wire Line
@@ -764,7 +743,7 @@ Wire Wire Line
 	5050 1800 5050 1750
 Wire Wire Line
 	5050 2200 5050 2300
-Text Notes 5500 1350 0    50   ~ 0
+Text Notes 5450 1700 0    50   ~ 0
 "5V GOOD"\nIndicator
 $Comp
 L Device:C C?
@@ -820,19 +799,19 @@ $EndComp
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5EC552E4
-P 8200 2700
+P 8200 2800
 AR Path="/5E80D1C0/5EC552E4" Ref="TP?"  Part="1" 
 AR Path="/5E80D210/5EC552E4" Ref="TP?"  Part="1" 
 AR Path="/5E84FADE/5EC552E4" Ref="TP?"  Part="1" 
-F 0 "TP?" H 8150 3000 50  0000 L CNN
-F 1 "5V" H 8150 2900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 8400 2700 50  0001 C CNN
-F 3 "~" H 8400 2700 50  0001 C CNN
-	1    8200 2700
+F 0 "TP?" H 8150 3100 50  0000 L CNN
+F 1 "5V" H 8150 3000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 8400 2800 50  0001 C CNN
+F 3 "~" H 8400 2800 50  0001 C CNN
+	1    8200 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 2700 8200 2950
+	8200 2800 8200 2950
 Connection ~ 8200 2950
 Wire Wire Line
 	8200 2950 8550 2950
@@ -943,4 +922,48 @@ Wire Wire Line
 Wire Wire Line
 	4500 2450 4500 2200
 Connection ~ 4500 2200
+$Comp
+L Device:C C?
+U 1 1 5EC2E4DE
+P 4900 5700
+F 0 "C?" H 5050 5800 50  0000 L CNN
+F 1 "5.1p" H 5050 5700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 5550 50  0001 C CNN
+F 3 "~" H 4900 5700 50  0001 C CNN
+F 4 "10V" H 5050 5600 50  0000 L CNN "VRating"
+F 5 "0402" H 5050 5500 50  0000 L CNN "Size"
+	1    4900 5700
+	-1   0    0    -1  
+$EndComp
+Text Notes 2600 5050 0    50   ~ 0
+EN set to 27V\nWCA: min/max = 25.9V / 28.1V\n(resistors 1%, ref 4%)
+Wire Wire Line
+	4900 3900 5550 3900
+Connection ~ 3250 1450
+Wire Wire Line
+	3250 1450 3950 1450
+Text Label 3050 1450 0    50   ~ 0
+5V
+Text Label 4950 4500 0    50   ~ 0
+PriSW_ss2
+Text Notes 3450 950  0    50   ~ 0
+Power-Good\nPull-ups
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5ECD266E
+P 1800 6300
+AR Path="/5E80D1C0/5ECD266E" Ref="TP?"  Part="1" 
+AR Path="/5E80D210/5ECD266E" Ref="TP?"  Part="1" 
+AR Path="/5E84FADE/5ECD266E" Ref="TP?"  Part="1" 
+AR Path="/5ECFB146/5ECD266E" Ref="TP?"  Part="1" 
+F 0 "TP?" H 1750 6600 50  0000 L CNN
+F 1 "GND" H 1750 6500 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2000 6300 50  0001 C CNN
+F 3 "~" H 2000 6300 50  0001 C CNN
+	1    1800 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6300 1800 6450
+Connection ~ 1800 6450
 $EndSCHEMATC
