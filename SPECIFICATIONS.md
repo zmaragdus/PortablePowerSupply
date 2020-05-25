@@ -8,8 +8,6 @@ Below are the overall goals of the project. All other specifications should work
 - The unit should have a display to show the output voltage/current
 - OPTIONAL: The unit should provide an auxiliary 3.3V or 5V (500mA, protected) output.
 
----
-
 ## Power Path / Conversion
 
 #### Line Input
@@ -58,8 +56,6 @@ Below are the overall goals of the project. All other specifications should work
 - All ceramic capacitors will have the case size added as a visible field to the schematic symbol.
 - Capacitors that are part of sensitive signal circuits (control, timing, resonance, etc.) should be of class I construction (C0G or NP0 rating preferred).
 
----
-
 ## Mechanical / User
 
 #### Line Input
@@ -72,7 +68,7 @@ Below are the overall goals of the project. All other specifications should work
 
 - Case material undetermined at this point. Will need to be at least heat-resistant plastic. If metal, case will be earth grounded.
 - Two sets of openings for airflow, one of those will have a fan mounted internally. (Current fan candidate is CFM-5010V-043-260 by CUI Devices.)
-- All externally-accessible screws will be metric-threaded with a standard torx drive.
+- All screws will be metric-threaded with a standard torx drive.
 - All externally-accessible screws will be countersunk flush with case or recessed into a counterbored hole.
 
 #### Power Output
@@ -89,13 +85,9 @@ Below are the overall goals of the project. All other specifications should work
 - LED indicator for power states: LED on for output activated, LED off for output deactivated, and LED blinking for fault.
 - Digital display must, at minimum, show actual output voltage and current. If additional area / capabilities exist, can also display output setpoints and any active faults (either a numeric code or an explicit statement).
 
----
-
 ## Software
 
 To be added later
-
----
 
 ## Documentation
 
