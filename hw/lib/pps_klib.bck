@@ -1,3 +1,28 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LT3086R
+D 40V 2.1A Adjustable Linear Regulator
+K LDO, linear regulator
+$ENDCMP
+#
+$CMP LT4320_DFN
+D 70V Ideal Diode Bridge Controller
+K rectifier, controller, bridge, AC
+$ENDCMP
+#
+$CMP LT8312
+D PFC Boost Controller
+K boost controller, PFC, power factor correction
+$ENDCMP
+#
+$CMP LT8653S
+D 42V Dual 2A Step-Down Regulator, 2MHz
+K buck, DCDC, step-down
+$ENDCMP
+#
+$CMP LTC3315A
+D 5V Dual 2A Step-Down Regulator, 2MHz
+K power, buck, step down, 5V, low voltage, 2MHz
+$ENDCMP
+#
 #End Doc Library
