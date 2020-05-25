@@ -53,7 +53,7 @@ The microcontroller will be a {UNDETERMINED}, written in {C?}, with {UNDETERMINE
 
 Documentation will be created in [LaTeX](https://www.latex-project.org//).
 
-Images will be created in [Inkscape](https://inkscape.org/} if possible.
+Images will be created in [Inkscape](https://inkscape.org/) if possible.
 
 ---
 
