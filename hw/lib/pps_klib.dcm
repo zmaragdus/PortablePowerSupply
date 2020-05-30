@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AD7682
+D ADC, 4 Ch. 16-Bit 250ksps SAR, SPI Interface, 5V
+K ADC, converter, SAR, 16-bit
+$ENDCMP
+#
+$CMP AD7689
+D ADC, 8 Ch. 16-Bit 250ksps SAR, SPI Interface, 5V
+K ADC, converter, SAR, 16-bit
+$ENDCMP
+#
 $CMP LT3086R
 D 40V 2.1A Adjustable Linear Regulator
 K LDO, linear regulator
