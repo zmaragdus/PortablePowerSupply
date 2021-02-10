@@ -7,10 +7,10 @@ This project is aimed at designing a portable power supply for lab work. Commerc
 ## Overall Goals
 
 - The unit should be the size of a large laptop charger.
-- The unit should be capable of producing an adjustable output up to 25VDC and 2A (50W).
+- The unit should be capable of producing an adjustable output up to 27VDC and 2A (55W).
 - The unit should have controls for adjusting the voltage and current limits.
 - The unit should have a display to show the output voltage/current
-- OPTIONAL: The unit should provide an auxiliary 3.3V or 5V (500mA, protected) output.
+- The unit should provide an auxiliary 5V/100mA output.
 
 ## Guiding Principles
 
@@ -40,7 +40,7 @@ Although system specifications is a sort of documentation, it shall be kept in t
 All tools used should be readily available to the general public. It is preferred to use FOSS tools.
 
 - The system schematic and circuit board will be created in [KiCAD](https://www.kicad-pcb.org).
-- The microcontroller will be a {UNDETERMINED}, written in {C++? UNDETERMINED}, with {UNDETERMINED} as a compiler and debugger.
+- The microcontroller will be an Arduino Nano Every, coded using the standard Arduino Suite. If the Nano Every is later determined to have insufficient power, the pin-compatible ST Nucleo L432K Mbed board will be used.
 - Documentation will be created in [LaTeX](https://www.latex-project.org//). [MiKTeX](https://miktex.org/) is the preferred interface for this.
 - Images will be created in [Inkscape](https://inkscape.org/) if possible.
 
