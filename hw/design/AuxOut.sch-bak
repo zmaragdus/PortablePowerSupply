@@ -756,7 +756,7 @@ U 1 1 602B597B
 P 5950 4500
 F 0 "D?" V 5989 4382 50  0000 R CNN
 F 1 "LED" V 5898 4382 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 5950 4500 50  0001 C CNN
+F 2 "" H 5950 4500 50  0001 C CNN
 F 3 "~" H 5950 4500 50  0001 C CNN
 	1    5950 4500
 	0    -1   -1   0   
@@ -1132,42 +1132,42 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP?
 U 1 1 60394660
-P 6300 4300
+P 6250 4300
 AR Path="/5E80D1C0/60394660" Ref="TP?"  Part="1" 
 AR Path="/5E80D210/60394660" Ref="TP?"  Part="1" 
 AR Path="/5E84FADE/60394660" Ref="TP?"  Part="1" 
 AR Path="/5ECFB146/60394660" Ref="TP?"  Part="1" 
 AR Path="/5EB6CA11/60394660" Ref="TP?"  Part="1" 
-F 0 "TP?" V 6350 4500 50  0000 L CNN
-F 1 "ALEDP" V 6250 4500 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6500 4300 50  0001 C CNN
-F 3 "~" H 6500 4300 50  0001 C CNN
-	1    6300 4300
+F 0 "TP?" V 6300 4600 50  0000 L CNN
+F 1 "ALEDP" V 6200 4500 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6450 4300 50  0001 C CNN
+F 3 "~" H 6450 4300 50  0001 C CNN
+	1    6250 4300
 	0    1    -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint TP?
 U 1 1 6039E199
-P 6300 4700
+P 6250 4700
 AR Path="/5E80D1C0/6039E199" Ref="TP?"  Part="1" 
 AR Path="/5E80D210/6039E199" Ref="TP?"  Part="1" 
 AR Path="/5E84FADE/6039E199" Ref="TP?"  Part="1" 
 AR Path="/5ECFB146/6039E199" Ref="TP?"  Part="1" 
 AR Path="/5EB6CA11/6039E199" Ref="TP?"  Part="1" 
-F 0 "TP?" V 6350 4900 50  0000 L CNN
-F 1 "ALEDN" V 6250 4900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6500 4700 50  0001 C CNN
-F 3 "~" H 6500 4700 50  0001 C CNN
-	1    6300 4700
+F 0 "TP?" V 6300 4900 50  0000 L CNN
+F 1 "ALEDN" V 6200 4900 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6450 4700 50  0001 C CNN
+F 3 "~" H 6450 4700 50  0001 C CNN
+	1    6250 4700
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6300 4700 5950 4700
+	6250 4700 5950 4700
 Connection ~ 5950 4700
 Wire Wire Line
 	5950 4700 5950 4650
 Wire Wire Line
-	6300 4300 5950 4300
+	6250 4300 5950 4300
 Connection ~ 5950 4300
 Wire Wire Line
 	5950 4300 5950 4250
@@ -1182,10 +1182,4 @@ Wire Wire Line
 Connection ~ 9050 1850
 Wire Wire Line
 	9050 1850 9200 1850
-Text Label 6300 4950 0    50   ~ 0
-Aux_LED_Drv
-Text Label 6050 4300 0    50   ~ 0
-A_LEDp
-Text Label 6050 4700 0    50   ~ 0
-A_LEDn
 $EndSCHEMATC

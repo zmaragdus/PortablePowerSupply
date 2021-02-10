@@ -3,41 +3,78 @@ EESchema-DOCLIB  Version 2.0
 $CMP AD7682
 D ADC, 4 Ch. 16-Bit 250ksps SAR, SPI Interface, 5V
 K ADC, converter, SAR, 16-bit
+F https://www.analog.com/en/products/ad7682.html
 $ENDCMP
 #
 $CMP AD7689
 D ADC, 8 Ch. 16-Bit 250ksps SAR, SPI Interface, 5V
 K ADC, converter, SAR, 16-bit
+F https://www.analog.com/en/products/ad7689.html
+$ENDCMP
+#
+$CMP ADA4523-1
+D Zero-Drift Amplifier, Low Noise, 4.5V to 36V
+K amplifier, low-noise, zero-drift, 36V
+F https://www.analog.com/en/products/ada4523-1.html
+$ENDCMP
+#
+$CMP ADR36x
+D Low-Noise Reference, Sink/Source Capable
+K reference, low power, low noise
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADR360_361_363_364_365_366.pdf
 $ENDCMP
 #
 $CMP LT3086R
 D 40V 2.1A Adjustable Linear Regulator
 K LDO, linear regulator
+F https://www.analog.com/en/products/lt3086.html
+$ENDCMP
+#
+$CMP LT3798
+D PFC Flyback Controller
+K PFC, off-line, controller, flyback, AC, universal
+F https://www.analog.com/en/products/lt3798.html
 $ENDCMP
 #
 $CMP LT4320_DFN
 D 70V Ideal Diode Bridge Controller
 K rectifier, controller, bridge, AC
+F https://www.analog.com/en/products/LT4320.html
 $ENDCMP
 #
 $CMP LT8312
 D PFC Boost Controller
 K boost controller, PFC, power factor correction
+F https://www.analog.com/en/products/LT8312.html
+$ENDCMP
+#
+$CMP LT8316
+D 600V No-Opto Isolated Flyback Controller
+K flyback, isolated, HV, no-opto, DC-DC
 $ENDCMP
 #
 $CMP LT8653S
 D 42V Dual 2A Step-Down Regulator, 2MHz
 K buck, DCDC, step-down
+F https://www.analog.com/en/products/LT8653S.html
+$ENDCMP
+#
+$CMP LTC1844
+D 6.5V 150mA Linear Regulator, Very Low Dropout, Adjustable
+K linear, regulator, LDO, adjustable, 150mA
+F https://www.analog.com/en/products/ltc1844.html
 $ENDCMP
 #
 $CMP LTC3315A
 D 5V Dual 2A Step-Down Regulator, 2MHz
 K power, buck, step down, 5V, low voltage, 2MHz
+F https://www.analog.com/en/products/ltc3315a.html
 $ENDCMP
 #
 $CMP LTC7106
 D 7-Bit Current DAC w/ PMBus Interface
 K DAC, current, regulator adjustment, I2C
+F https://www.analog.com/en/products/ltc7106.html
 $ENDCMP
 #
 #End Doc Library
