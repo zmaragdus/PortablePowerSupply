@@ -53,6 +53,12 @@ D 600V No-Opto Isolated Flyback Controller
 K flyback, isolated, HV, no-opto, DC-DC
 $ENDCMP
 #
+$CMP LT8620
+D 65V 2A Step-Down Regulator
+K buck, step-down, switching, low quiescent current, 2MHz
+F https://www.analog.com/en/products/lt8620.html
+$ENDCMP
+#
 $CMP LT8653S
 D 42V Dual 2A Step-Down Regulator, 2MHz
 K buck, DCDC, step-down

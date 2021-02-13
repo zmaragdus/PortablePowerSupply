@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AD5272
+D Digital Potentiometer, 1%, 1024 Steps, I2C, Programmable NVM
+K potentiometer, pot, adjust, digital, I2C
+F https://www.analog.com/en/products/ad5272.html#
+$ENDCMP
+#
 $CMP AD7682
 D ADC, 4 Ch. 16-Bit 250ksps SAR, SPI Interface, 5V
 K ADC, converter, SAR, 16-bit
@@ -53,6 +59,12 @@ D 600V No-Opto Isolated Flyback Controller
 K flyback, isolated, HV, no-opto, DC-DC
 $ENDCMP
 #
+$CMP LT8620
+D 65V 2A Step-Down Regulator
+K buck, step-down, switching, low quiescent current, 2MHz
+F https://www.analog.com/en/products/lt8620.html
+$ENDCMP
+#
 $CMP LT8653S
 D 42V Dual 2A Step-Down Regulator, 2MHz
 K buck, DCDC, step-down
@@ -75,6 +87,11 @@ $CMP LTC7106
 D 7-Bit Current DAC w/ PMBus Interface
 K DAC, current, regulator adjustment, I2C
 F https://www.analog.com/en/products/ltc7106.html
+$ENDCMP
+#
+$CMP Wuerth_750315827
+D Power Transformer, Optimized for 36-72V In 5V Out, 50k-200kHz
+F https://www.we-online.de/katalog/datasheet/750315827.pdf
 $ENDCMP
 #
 #End Doc Library

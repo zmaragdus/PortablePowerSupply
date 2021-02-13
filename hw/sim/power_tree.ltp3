@@ -94,7 +94,7 @@
 	VoutMax : 65
 	IoutMax : 3
 	NomEff  : 92
-<BPrt> Converter, 75, 875, 480, LT8620
+<BPrt> Converter, 75, 875, 670, LT8620
 	Color   : #FF6495ED
 	Width   : 120
 	Height  : 60
@@ -116,13 +116,14 @@
 	IoutMax : 2
 	pLossSet: 2
 	MtrxFreq: 248000
+	MtrxIoMn: 0
 	MtrxIoMx: 2
 	MtrxVnMn: 55
 	MtrxVnMx: 65
 	MatrixA : 0.1791576697, 0.0349208145, 0.2091915958
 	MatrixB : -0.24901259767952, 0.00261028221216, 0.16280695494336, 0.01350150668224, 1.45860408E-05, 0.0001825759232, -9.534382832E-05, 1.0414816E-05, 2.07247248E-06
 	MatrixC : 4.3912496923, 0.0026123694, 0.1413526316, -0.1383189272, 1.44919E-05, 0.0005410876, 0.0011364513, 1.04168E-05, 8.01E-08, -1.5694989551, -1.0289E-06, 0.0041736696, 0.0511654235, 4.13E-08, -6.97485E-05, -0.000414976, -4E-10, 3.878E-07, 0.1278149603, 1.226E-07, 3.06046E-05, -0.0041444486, -4.5E-09, -5.105E-07, 3.35948E-05, 0, 2.8E-09
-<BPrt> Load, 78, 1485, 480, MCU
+<BPrt> Load, 78, 1485, 670, MCU
 	Color   : #FF6495ED
 	Width   : 80
 	Height  : 60
@@ -130,7 +131,7 @@
 <Term> Input, 1
 	Inom    : 0.3
 	Ipeak   : 0.5
-<BPrt> Load, 79, 1485, 575, Disp
+<BPrt> Load, 79, 1485, 765, Disp
 	Color   : #FF6495ED
 	Width   : 80
 	Height  : 60
@@ -138,7 +139,7 @@
 <Term> Input, 1
 	Inom    : 0.2
 	Ipeak   : 0.4
-<BPrt> Load, 80, 1485, 670, Ref
+<BPrt> Load, 80, 1485, 860, Ref
 	Color   : #FF6495ED
 	Width   : 80
 	Height  : 60
@@ -149,7 +150,7 @@
 	Ipeak   : 70
 	IpeakU  : -3
 	Title   : 
-<BPrt> Load, 81, 1485, 760, LEDs
+<BPrt> Load, 81, 1485, 950, LEDs
 	Color   : #FF6495ED
 	Width   : 80
 	Height  : 60
@@ -159,7 +160,7 @@
 	InomU   : -3
 	Ipeak   : 70
 	IpeakU  : -3
-<BPrt> Converter, 90, 875, 880, LT8303
+<BPrt> Converter, 90, 875, 440, LT8303
 	Color   : #FF7FFF00
 	Width   : 120
 	Height  : 60
@@ -179,7 +180,7 @@
 	ResType : 4
 <Term> Input, 1
 <Term> Output, 1
-<BPrt> Load, 98, 1485, 880, Aux
+<BPrt> Load, 98, 1485, 440, Aux
 	Color   : #FF7FFF00
 	Width   : 80
 	Height  : 60
@@ -187,7 +188,7 @@
 <Term> Input, 1
 	Inom    : 0.1
 	Ipeak   : 0.2
-<BPrt> LDO, 99, 1140, 880, ADP151
+<BPrt> LDO, 99, 1140, 440, ADP151
 	Color   : #FF7FFF00
 	Width   : 120
 	Height  : 60
@@ -196,6 +197,14 @@
 <Term> Output, 1
 	Vout    : 5
 	IoutMax : 0.2
+<BPrt> Load, 108, 1485, 1040, Fan
+	Color   : #FF6495ED
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.19
+	Ipeak   : 0.22
 <Symb> Rectangle, 0, 0, 0, 0,0, 0,0
 	Color   : #FF000000
 	Color2  : #00FFFFFF
@@ -204,11 +213,11 @@
 	Color   : #FF000000
 	Thicknss: 18
 	Comments: Primary Regulated Output
-<Symb> Label, 105, 978, 820, 0,0, 0,0
+<Symb> Label, 105, 1023, 405, 0,0, 0,0
 	Color   : #FF000000
 	Thicknss: 18
 	Comments: Auxiliary 5V Output
-<Symb> Label, 106, 1006, 422, 0,0, 0,0
+<Symb> Label, 106, 1066, 617, 0,0, 0,0
 	Color   : #FF000000
 	Thicknss: 18
 	Comments: System Loads
@@ -216,7 +225,11 @@
 	Color   : #FF000000
 	Thicknss: 18
 	Comments: PFC flyback*^!#and isolation
-<Symb> SummaryReport, 0, 220, 385, 0,0, 0,0
+<Symb> Rectangle, 0, 220, 385, 0,0, 0,0
+	Color   : #FF000000
+	Color2  : #00FFFFFF
+	Thicknss: 24
+<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
 	Color   : #FF000000
 	Color2  : #00FFFFFF
 	Thicknss: 24
@@ -275,7 +288,7 @@
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 91, 92
-	Points  : (875,510)(735,510)
+	Points  : (875,700)(735,700)(735,470)
 <Wire> 77, 73
 	ZIndex  : -1
 	ETermPID: 70
@@ -289,57 +302,57 @@
 	STermTyp: Output
 	STermNum: 1
 	EWires  : 85, 89
-	Points  : (995,510)(1395,510)
+	Points  : (995,700)(1395,700)
 <Wire> 84, 82
 	ZIndex  : -1
 	STermPID: 81
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 86, 87
-	Points  : (1485,790)(1395,790)(1395,700)
+	EWires  : 109, 110
+	Points  : (1485,980)(1395,980)
 <Wire> 85, 82
 	ZIndex  : -1
 	ETermPID: 78
 	ETermTyp: Input
 	ETermNum: 1
 	SWires  : 83, 89
-	Points  : (1395,510)(1485,510)
+	Points  : (1395,700)(1485,700)
 <Wire> 86, 82
 	ZIndex  : -1
 	STermPID: 80
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 84, 87
-	Points  : (1485,700)(1395,700)
+	EWires  : 87, 110
+	Points  : (1485,890)(1395,890)
 <Wire> 87, 82
 	ZIndex  : -1
-	SWires  : 86, 84
+	SWires  : 86, 110
 	EWires  : 88, 89
-	Points  : (1395,700)(1395,605)
+	Points  : (1395,890)(1395,795)
 <Wire> 88, 82
 	ZIndex  : -1
 	STermPID: 79
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 87, 89
-	Points  : (1485,605)(1395,605)
+	Points  : (1485,795)(1395,795)
 <Wire> 89, 82
 	ZIndex  : -1
 	SWires  : 88, 87
 	EWires  : 83, 85
-	Points  : (1395,605)(1395,510)
+	Points  : (1395,795)(1395,700)
 <Wire> 91, 73
 	ZIndex  : -1
 	STermPID: 90
 	STermTyp: Input
 	STermNum: 1
 	EWires  : 76, 92
-	Points  : (875,910)(735,910)(735,510)
+	Points  : (875,470)(735,470)
 <Wire> 92, 73
 	ZIndex  : -1
 	SWires  : 91, 76
 	EWires  : 74, 77
-	Points  : (735,510)(735,235)
+	Points  : (735,470)(735,235)
 <Wire> 95, 94
 	ZIndex  : -1
 	STermPID: 1
@@ -366,7 +379,7 @@
 	ETermPID: 99
 	ETermTyp: Input
 	ETermNum: 1
-	Points  : (995,910)(1140,910)
+	Points  : (995,470)(1140,470)
 <Wire> 103, 102
 	ZIndex  : -1
 	STermPID: 98
@@ -375,4 +388,16 @@
 	ETermPID: 99
 	ETermTyp: Output
 	ETermNum: 1
-	Points  : (1485,910)(1260,910)
+	Points  : (1485,470)(1260,470)
+<Wire> 109, 82
+	ZIndex  : -1
+	STermPID: 108
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 84, 110
+	Points  : (1485,1070)(1395,1070)(1395,980)
+<Wire> 110, 82
+	ZIndex  : -1
+	SWires  : 109, 84
+	EWires  : 86, 87
+	Points  : (1395,980)(1395,890)

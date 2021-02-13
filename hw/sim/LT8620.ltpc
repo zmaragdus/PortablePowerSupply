@@ -8,9 +8,9 @@
       <PartName>LT8620</PartName>
       <IcTa>25</IcTa>
       <LastSavedFilesCultureInfo>en-US</LastSavedFilesCultureInfo>
-      <SolutionAreamm2>165.5</SolutionAreamm2>
-      <SolutionComponentCount>8</SolutionComponentCount>
-      <SolutionMaxHeightmm>6.1</SolutionMaxHeightmm>
+      <SolutionAreamm2>281.3</SolutionAreamm2>
+      <SolutionComponentCount>6</SolutionComponentCount>
+      <SolutionMaxHeightmm>12.7</SolutionMaxHeightmm>
     </ConverterSpec>
   </ConverterSpecs>
   <ProgramUserInfos>
@@ -58,49 +58,59 @@
       <InductorIheat>5</InductorIheat>
       <InductorTheat>40</InductorTheat>
       <InductorCoreLoss>0.062</InductorCoreLoss>
-      <Cin>1E-05</Cin>
-      <CinESR>0.1</CinESR>
+      <Cin>2.2E-05</Cin>
+      <CinESR>0.03</CinESR>
+      <CinESL>5E-09</CinESL>
       <NCin>1</NCin>
-      <CinManufacturer>SUN ELECT</CinManufacturer>
-      <CinPartNumber>100CE10BS</CinPartNumber>
-      <CinAtNoVoltage>1E-05</CinAtNoVoltage>
-      <CinCeramic>7.28E-07</CinCeramic>
-      <CinCeramicESR>0.004</CinCeramicESR>
+      <CinManufacturer>PANASONIC</CinManufacturer>
+      <CinPartNumber>100SXV22M</CinPartNumber>
+      <CinPackage>F12</CinPackage>
+      <CinLength>10</CinLength>
+      <CinWidth>10</CinWidth>
+      <CinHeight>12.7</CinHeight>
+      <CinAtHalfRated>2.2E-05</CinAtHalfRated>
+      <CinAtFullRated>2.2E-05</CinAtFullRated>
+      <CinAtNoVoltage>2.2E-05</CinAtNoVoltage>
+      <CinDerated>2.2E-05</CinDerated>
+      <CinVoltageRating>100</CinVoltageRating>
+      <CinCeramic>8.43E-07</CinCeramic>
+      <CinCeramicESR>0.003</CinCeramicESR>
+      <CinCeramicESL>1.28E-09</CinCeramicESL>
       <NCinCeramic>1</NCinCeramic>
-      <CinCeramicManufacturer>MURATA</CinCeramicManufacturer>
-      <CinCeramicPartNumber>GRM31CR72A225KA73</CinCeramicPartNumber>
-      <CinCeramicPackage>1206</CinCeramicPackage>
+      <CinCeramicManufacturer>TDK</CinCeramicManufacturer>
+      <CinCeramicPartNumber>C3225X7R2A225K230AB</CinCeramicPartNumber>
+      <CinCeramicPackage>1210</CinCeramicPackage>
       <CinCeramicLength>3.2</CinCeramicLength>
-      <CinCeramicWidth>1.6</CinCeramicWidth>
-      <CinCeramicHeight>1.6</CinCeramicHeight>
-      <CinCeramicAtHalfRated>8.2E-07</CinCeramicAtHalfRated>
-      <CinCeramicAtFullRated>3.6E-07</CinCeramicAtFullRated>
+      <CinCeramicWidth>2.5</CinCeramicWidth>
+      <CinCeramicHeight>2.5</CinCeramicHeight>
+      <CinCeramicAtHalfRated>9.54E-07</CinCeramicAtHalfRated>
+      <CinCeramicAtFullRated>3.99E-07</CinCeramicAtFullRated>
       <CinCeramicAtNoVoltage>2.2E-06</CinCeramicAtNoVoltage>
-      <CinCeramicDerated>7.28E-07</CinCeramicDerated>
+      <CinCeramicDerated>8.43E-07</CinCeramicDerated>
       <CinCeramicVoltageRating>100</CinCeramicVoltageRating>
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
-      <VoStepMaxTargetPercent>2.91720208984541</VoStepMaxTargetPercent>
+      <VoStepMaxTargetPercent>2.88056622415923</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
-      <Coc>1.5532381E-05</Coc>
-      <ESRc>0.0018</ESRc>
-      <ESLc>1.05E-09</ESLc>
-      <Numc>4</Numc>
+      <Coc>3.0295873E-05</Coc>
+      <ESRc>0.0022</ESRc>
+      <ESLc>1.1E-09</ESLc>
+      <Numc>2</Numc>
       <CeramicCapacitorManufacturer>TDK</CeramicCapacitorManufacturer>
-      <CeramicCapacitorPartNumber>C3216X5R0J476M</CeramicCapacitorPartNumber>
+      <CeramicCapacitorPartNumber>C3225X5R0J476M</CeramicCapacitorPartNumber>
       <CeramicCapacitorLength>3.2</CeramicCapacitorLength>
-      <CeramicCapacitorWidth>1.6</CeramicCapacitorWidth>
-      <CeramicCapacitorHeight>1.8</CeramicCapacitorHeight>
-      <CeramicCapacitorPackage>1206</CeramicCapacitorPackage>
-      <CocAtHalfRated>2.26E-05</CocAtHalfRated>
-      <CocAtFullRated>1.03E-05</CocAtFullRated>
+      <CeramicCapacitorWidth>2.5</CeramicCapacitorWidth>
+      <CeramicCapacitorHeight>2.8</CeramicCapacitorHeight>
+      <CeramicCapacitorPackage>1210</CeramicCapacitorPackage>
+      <CocAtHalfRated>3.88E-05</CocAtHalfRated>
+      <CocAtFullRated>2.4E-05</CocAtFullRated>
       <CocAtNoVoltage>4.7E-05</CocAtNoVoltage>
-      <CocDerated>1.5532380952381E-05</CocDerated>
+      <CocDerated>3.0295873015873E-05</CocDerated>
       <CocVoltageRating>6.3</CocVoltageRating>
       <OutputLCFilterEnabled>False</OutputLCFilterEnabled>
       <OutputLCFilterSensingIsLocal>False</OutputLCFilterSensingIsLocal>
       <OutputLCFilterSensingIsRemote>False</OutputLCFilterSensingIsRemote>
-      <RfbTopActual>1000000</RfbTopActual>
-      <RfbBotActual>243000</RfbBotActual>
+      <RfbTopActual>100000</RfbTopActual>
+      <RfbBotActual>24300</RfbBotActual>
       <CfbTopActual>2.2E-11</CfbTopActual>
       <FcDesired>67333.3333333333</FcDesired>
       <PhaseBoostDesired>30</PhaseBoostDesired>
@@ -129,8 +139,8 @@
       <RBOV_OVP>10000000</RBOV_OVP>
       <RailNumber>1</RailNumber>
       <BW>22.39</BW>
-      <PM>64.99</PM>
-      <DeltaVoLoadStep>147.37</DeltaVoLoadStep>
+      <PM>65.37</PM>
+      <DeltaVoLoadStep>157.61934880406</DeltaVoLoadStep>
       <FootprintClearanceFactor>1.5</FootprintClearanceFactor>
       <Mode>Buck</Mode>
       <ModeChanged>False</ModeChanged>
@@ -149,8 +159,8 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.9088</Efficiency>
-      <VoutRipplePercent>0.0008348183</VoutRipplePercent>
+      <Efficiency>0.91</Efficiency>
+      <VoutRipplePercent>0.0008235459</VoutRipplePercent>
       <LossCurveA2>0.1791576697</LossCurveA2>
       <LossCurveA1>0.0349208145</LossCurveA1>
       <LossCurveA0>0.2091915958</LossCurveA0>
