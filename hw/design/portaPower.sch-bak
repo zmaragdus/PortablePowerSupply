@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -94,7 +94,7 @@ F12 "Vbus_adj" B R 6500 3250 50
 F13 "EN_bus" B L 5500 3400 50 
 F14 "~ALT_2A" B L 5500 3550 50 
 $EndSheet
-Text Notes 1350 1650 0    50   ~ 0
+Text Notes 1300 1200 0    50   ~ 0
 Line AC
 Wire Wire Line
 	6500 3400 7500 3400
@@ -104,8 +104,6 @@ Wire Wire Line
 	7500 1750 7950 1750
 Wire Wire Line
 	6500 3550 7600 3550
-Wire Wire Line
-	7600 3550 7600 2900
 Wire Wire Line
 	7600 1850 7950 1850
 Wire Wire Line
@@ -149,28 +147,29 @@ Adjustment
 $Comp
 L power:GND #PWR?
 U 1 1 5EC49D4C
-P 2700 4600
-F 0 "#PWR?" H 2700 4350 50  0001 C CNN
-F 1 "GND" H 2705 4427 50  0000 C CNN
-F 2 "" H 2700 4600 50  0001 C CNN
-F 3 "" H 2700 4600 50  0001 C CNN
-	1    2700 4600
+P 2700 6750
+F 0 "#PWR?" H 2700 6500 50  0001 C CNN
+F 1 "GND" H 2705 6577 50  0000 C CNN
+F 2 "" H 2700 6750 50  0001 C CNN
+F 3 "" H 2700 6750 50  0001 C CNN
+	1    2700 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 4600 2700 4400
+	2700 6750 2700 6550
 Wire Wire Line
-	2700 4400 2600 4400
-Text Notes 1400 3200 0    100  ~ 0
-Auxiliary Output &\nSecondary Regulators
+	2700 6550 2600 6550
+Text Notes 1750 5700 0    100  ~ 0
+Auxiliary\n5V Output
 $Sheet
-S 1700 3750 900  800 
+S 1700 5900 900  800 
 U 5EB6CA11
 F0 "AuxOut" 50
 F1 "AuxOut.sch" 50
-F2 "AuxPOut" B R 2600 3900 50 
-F3 "GND" B R 2600 4400 50 
-F4 "AuxIn" B L 1700 3900 50 
+F2 "GND" B R 2600 6550 50 
+F3 "AuxOut_I" B R 2600 6100 50 
+F4 "Vbus" B L 1700 6100 50 
+F5 "AuxGnd_I" B R 2600 6200 50 
 $EndSheet
 Text Notes 7350 1500 0    50   ~ 0
 OUT + 0.75V
@@ -264,37 +263,6 @@ Wire Wire Line
 	2400 1500 2850 1500
 Text Notes 2450 1800 0    50   ~ 0
 Filtered &\nProtected\nAC
-$Comp
-L MCU_Module:Arduino_Nano_v3.x A?
-U 1 1 601F5573
-P 9200 4750
-F 0 "A?" H 9550 5700 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 9750 3800 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 9200 4750 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 9200 4750 50  0001 C CNN
-	1    9200 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601F76A4
-P 9200 5850
-F 0 "#PWR?" H 9200 5600 50  0001 C CNN
-F 1 "GND" H 9205 5677 50  0000 C CNN
-F 2 "" H 9200 5850 50  0001 C CNN
-F 3 "" H 9200 5850 50  0001 C CNN
-	1    9200 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 5850 9200 5800
-Wire Wire Line
-	9200 5800 9300 5800
-Wire Wire Line
-	9300 5800 9300 5750
-Connection ~ 9200 5800
-Wire Wire Line
-	9200 5800 9200 5750
 Wire Wire Line
 	8950 1550 8950 2350
 Connection ~ 8950 1550
@@ -355,19 +323,6 @@ MainOutADC
 Text Label 9800 2350 0    50   ~ 0
 MainOut
 Wire Wire Line
-	9850 2900 7600 2900
-Connection ~ 7600 2900
-Wire Wire Line
-	7600 2900 7600 1850
-Wire Wire Line
-	9700 5150 10250 5150
-Wire Wire Line
-	9700 5250 10250 5250
-Text Label 10250 5150 2    50   ~ 0
-SDA
-Text Label 10250 5250 2    50   ~ 0
-SCL
-Wire Wire Line
 	5000 3950 5500 3950
 Wire Wire Line
 	5500 4050 5000 4050
@@ -375,12 +330,61 @@ Text Label 5000 3950 0    50   ~ 0
 SDA
 Text Label 5000 4050 0    50   ~ 0
 SCL
+Text Notes 1700 4100 0    100  ~ 0
+System\nRegulator
+Text Label 1550 1500 2    50   ~ 0
+L
+Text Label 1450 1700 2    50   ~ 0
+N
 Wire Wire Line
-	10600 4850 9700 4850
+	1250 1900 1400 1900
 Wire Wire Line
-	10600 2800 10600 4850
+	1400 1900 1400 2300
+$Comp
+L power:Earth_Protective #PWR?
+U 1 1 60430B87
+P 1400 2350
+F 0 "#PWR?" H 1650 2100 50  0001 C CNN
+F 1 "Earth_Protective" H 1850 2200 50  0001 C CNN
+F 2 "" H 1400 2250 50  0001 C CNN
+F 3 "~" H 1400 2250 50  0001 C CNN
+	1    1400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 6043152A
+P 1200 2300
+F 0 "H?" V 1250 2650 50  0000 C CNN
+F 1 "EARTH" V 1150 2600 50  0000 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 1200 2300 50  0001 C CNN
+F 3 "~" H 1200 2300 50  0001 C CNN
+	1    1200 2300
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	9850 2900 9850 4950
+	1300 2300 1400 2300
+Connection ~ 1400 2300
 Wire Wire Line
-	9850 4950 9700 4950
+	1400 2300 1400 2350
+Text Notes 700  2550 0    50   ~ 0
+M4 thru hole
+Text Label 2500 1500 0    50   ~ 0
+L_filt
+Text Label 2500 1850 0    50   ~ 0
+N_filt
+Wire Wire Line
+	7600 1850 7600 3550
+$Sheet
+S 1600 4250 950  850 
+U 604399F3
+F0 "SysPower" 50
+F1 "SysPower.sch" 50
+F2 "Vbus" I L 1600 4400 50 
+F3 "GND" B R 2550 5000 50 
+F4 "PGOOD" O L 1600 4750 50 
+F5 "5V" O R 2550 4400 50 
+$EndSheet
+Text Notes 900  7500 0    50   ~ 0
+All resistors 0603 size unless otherwise stated\nAll capacitors 0603 size unless otherwise stated\nAll capacitors rated for 16V unless otherwise stated
 $EndSCHEMATC

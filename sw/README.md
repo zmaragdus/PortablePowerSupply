@@ -7,7 +7,7 @@ To facilitate use and modification by hobbyists and students, the chosen microco
 
 ### Main Functions
 
-1. Control outputs by driving regulator enable signals high/low
+1. Turn outputs on/off by driving regulator enable signals high/low
 
 2. Measure voltages and current readbacks.
 
@@ -22,13 +22,14 @@ To facilitate use and modification by hobbyists and students, the chosen microco
 
 - SPI: drives the display
 
-- I2C: drives the power supply adjustment DACs
+- I2C: drives the voltage adjustment DACs and current limit digipot
 
-- ADC: measures (a) preregulator voltage, (b) regulator voltage, (c) regulator current monitor, (d) voltage potentiometer, (e) current potentiometer
+- ADC: measures (a) preregulator voltage, (b) regulator voltage, (c) regulator current monitor, (d) regulator temperature, (e) current potentiometer, (f) voltage potentiometer
 
-- Digital Inputs: reads fault flags from (a) preregulator, (b) aux regulator, (c) main power button
+- Digital Inputs: reads (a) preregulator fault flag, (b) aux regulator fault flag, (c) main power button
 
-- Digital Outputs: controls (a) preregulator enable, (b) regulator enable, (c) main output indicator, (d) aux output indicator
+- Digital Outputs: controls (a) preregulator enable, (b) regulator enable, (c) main output indicator
 
 - USB: built-in connection for programming/debugging
 
+### Software Architecture
