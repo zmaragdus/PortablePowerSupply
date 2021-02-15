@@ -8,7 +8,7 @@
       <PartName>LT8620</PartName>
       <IcTa>25</IcTa>
       <LastSavedFilesCultureInfo>en-US</LastSavedFilesCultureInfo>
-      <SolutionAreamm2>281.3</SolutionAreamm2>
+      <SolutionAreamm2>371.3</SolutionAreamm2>
       <SolutionComponentCount>6</SolutionComponentCount>
       <SolutionMaxHeightmm>12.7</SolutionMaxHeightmm>
     </ConverterSpec>
@@ -45,19 +45,18 @@
       <NIc>1</NIc>
       <VinD>7</VinD>
       <Ta>25</Ta>
-      <InductorThetaWA>24.8</InductorThetaWA>
+      <InductorThetaWA>22.6</InductorThetaWA>
       <InductorRipplePercentDesired>40</InductorRipplePercentDesired>
       <Lo>2.2E-05</Lo>
-      <DCR>0.0551</DCR>
-      <InductorManufacturer>COILCRAFT</InductorManufacturer>
-      <InductorPartNumber>XAL6060-223ME</InductorPartNumber>
-      <InductorLength>6.56</InductorLength>
-      <InductorWidth>6.36</InductorWidth>
-      <InductorHeight>6.1</InductorHeight>
-      <InductorIsat>5.6</InductorIsat>
+      <DCR>0.0604</DCR>
+      <InductorManufacturer>VISHAY</InductorManufacturer>
+      <InductorPartNumber>IHLP4040DZER220M11</InductorPartNumber>
+      <InductorLength>10.3</InductorLength>
+      <InductorWidth>11.5</InductorWidth>
+      <InductorHeight>4</InductorHeight>
+      <InductorIsat>4.5</InductorIsat>
       <InductorIheat>5</InductorIheat>
       <InductorTheat>40</InductorTheat>
-      <InductorCoreLoss>0.062</InductorCoreLoss>
       <Cin>2.2E-05</Cin>
       <CinESR>0.03</CinESR>
       <CinESL>5E-09</CinESL>
@@ -89,7 +88,7 @@
       <CinCeramicDerated>8.43E-07</CinCeramicDerated>
       <CinCeramicVoltageRating>100</CinCeramicVoltageRating>
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
-      <VoStepMaxTargetPercent>2.88056622415923</VoStepMaxTargetPercent>
+      <VoStepMaxTargetPercent>2.88180209704175</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
       <Coc>3.0295873E-05</Coc>
       <ESRc>0.0022</ESRc>
@@ -111,9 +110,9 @@
       <OutputLCFilterSensingIsRemote>False</OutputLCFilterSensingIsRemote>
       <RfbTopActual>100000</RfbTopActual>
       <RfbBotActual>24300</RfbBotActual>
-      <CfbTopActual>2.2E-11</CfbTopActual>
-      <FcDesired>67333.3333333333</FcDesired>
-      <PhaseBoostDesired>30</PhaseBoostDesired>
+      <CfbTopActual>1E-10</CfbTopActual>
+      <FcDesired>41333.3333333333</FcDesired>
+      <PhaseBoostDesired>40</PhaseBoostDesired>
       <PhaseMarginDesired>60</PhaseMarginDesired>
       <Ilim>0.7175</Ilim>
       <HotSwapCurrentLimitThresholdFoldbackFactor>1</HotSwapCurrentLimitThresholdFoldbackFactor>
@@ -138,9 +137,9 @@
       <RTOV_OVP>10000000</RTOV_OVP>
       <RBOV_OVP>10000000</RBOV_OVP>
       <RailNumber>1</RailNumber>
-      <BW>22.39</BW>
-      <PM>65.37</PM>
-      <DeltaVoLoadStep>157.61934880406</DeltaVoLoadStep>
+      <BW>14.13</BW>
+      <PM>56.46</PM>
+      <DeltaVoLoadStep>204.8289740616</DeltaVoLoadStep>
       <FootprintClearanceFactor>1.5</FootprintClearanceFactor>
       <Mode>Buck</Mode>
       <ModeChanged>False</ModeChanged>
@@ -159,7 +158,7 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.91</Efficiency>
+      <Efficiency>0.9134</Efficiency>
       <VoutRipplePercent>0.0008235459</VoutRipplePercent>
       <LossCurveA2>0.1791576697</LossCurveA2>
       <LossCurveA1>0.0349208145</LossCurveA1>

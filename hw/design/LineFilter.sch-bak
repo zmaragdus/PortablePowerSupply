@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -17,10 +17,10 @@ Text HLabel 3350 2050 0    50   UnSpc ~ 0
 P
 Text HLabel 3350 2750 0    50   UnSpc ~ 0
 N
-Text HLabel 6650 2050 2    50   UnSpc ~ 0
-P_FILT
-Text HLabel 6650 2750 2    50   UnSpc ~ 0
-N_FILT
+Text HLabel 8150 1700 2    50   UnSpc ~ 0
+POS
+Text HLabel 8150 3100 2    50   UnSpc ~ 0
+NEG
 $Comp
 L Device:Fuse F?
 U 1 1 60433461
@@ -99,13 +99,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 2300 6300 2050
 Wire Wire Line
-	6300 2050 6650 2050
-Wire Wire Line
 	6000 2500 6300 2500
 Wire Wire Line
 	6300 2500 6300 2750
-Wire Wire Line
-	6300 2750 6650 2750
 Wire Wire Line
 	5100 2250 5100 2050
 Wire Wire Line
@@ -120,4 +116,31 @@ Text Notes 4900 3150 0    50   ~ 0
 Use Y1\nsafety cap
 Text Notes 5650 1850 0    50   ~ 0
 Add common mode\nchoke for prototype;\nevaluate with & without\nfor later iterations
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 602AF49E
+P 7350 2400
+F 0 "D?" H 7694 2446 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 7694 2355 50  0000 L CNN
+F 2 "" H 7350 2400 50  0001 C CNN
+F 3 "~" H 7350 2400 50  0001 C CNN
+	1    7350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2400 7650 1700
+Wire Wire Line
+	7650 1700 8150 1700
+Wire Wire Line
+	7050 2400 7050 3100
+Wire Wire Line
+	7050 3100 8150 3100
+Wire Wire Line
+	7350 2750 7350 2700
+Wire Wire Line
+	6300 2750 7350 2750
+Wire Wire Line
+	7350 2050 7350 2100
+Wire Wire Line
+	6300 2050 7350 2050
 $EndSCHEMATC

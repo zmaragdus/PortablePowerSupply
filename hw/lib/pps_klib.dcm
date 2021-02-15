@@ -59,6 +59,11 @@ K buck, step-down, switching, low quiescent current, 2MHz
 F https://www.analog.com/en/products/lt8620.html
 $ENDCMP
 #
+$CMP LT8646S
+D 65V, 8A Sync. Step-Down Regulator, 2MHz, Silent Switcher 2, External Comp.
+F https://www.analog.com/en/products/LT8646S.html#
+$ENDCMP
+#
 $CMP LT8653S
 D 42V Dual 2A Step-Down Regulator, 2MHz
 K buck, DCDC, step-down
