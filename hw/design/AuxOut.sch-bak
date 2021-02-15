@@ -307,7 +307,7 @@ Wire Wire Line
 	9500 1950 9500 1850
 Connection ~ 9500 1850
 Wire Wire Line
-	9500 1850 9800 1850
+	9500 1850 10000 1850
 $Comp
 L power:GND1 #PWR?
 U 1 1 6026100B
@@ -845,8 +845,8 @@ F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6900 5100 50  0001 C CNN
 $EndComp
 Text Notes 6900 5450 0    50   ~ 0
 Slow On\nFast Off
-Text Notes 7200 3950 0    100  ~ 0
-Aux Output Indicator
+Text Notes 7050 3900 0    100  ~ 0
+Aux Output Indicator\n(Optional Circuit)
 Text Notes 10000 3000 0    50   ~ 0
 Triggers at 4.75V
 Text Notes 10100 5900 0    50   ~ 0
@@ -1275,7 +1275,7 @@ Wire Wire Line
 	4950 1850 4900 1850
 Text Label 2650 2400 0    50   ~ 0
 Fly_EN
-Text HLabel 9800 1850 2    50   BiDi ~ 0
+Text HLabel 10350 1850 2    50   BiDi ~ 0
 AuxOut_I
 Text HLabel 1650 1700 0    50   BiDi ~ 0
 Vbus
@@ -1307,4 +1307,37 @@ F 3 "~" H 8750 2150 50  0001 C CNN
 	1    8750 2150
 	1    0    0    1   
 $EndComp
+NoConn ~ 4550 2000
+$Comp
+L Device:C C?
+U 1 1 6038857F
+P 10000 2100
+F 0 "C?" H 10115 2191 50  0000 L CNN
+F 1 "4.7u" H 10115 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 10038 1950 50  0001 C CNN
+F 3 "~" H 10000 2100 50  0001 C CNN
+F 4 "Murata_GRM21BR71C475KE51L" H 10000 2100 50  0001 C CNN "MfrNum"
+F 5 "16V" H 10115 2055 50  0001 L CNN "VRating"
+F 6 "0805" H 10115 2009 50  0000 L CNN "Size"
+	1    10000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1950 10000 1850
+Connection ~ 10000 1850
+Wire Wire Line
+	10000 1850 10350 1850
+$Comp
+L power:GND1 #PWR?
+U 1 1 6038EEFA
+P 10000 2350
+F 0 "#PWR?" H 10000 2100 50  0001 C CNN
+F 1 "GND1" H 10005 2177 50  0000 C CNN
+F 2 "" H 10000 2350 50  0001 C CNN
+F 3 "" H 10000 2350 50  0001 C CNN
+	1    10000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2350 10000 2250
 $EndSCHEMATC

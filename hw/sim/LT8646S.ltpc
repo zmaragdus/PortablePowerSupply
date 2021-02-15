@@ -32,13 +32,13 @@
       <PartWidth>4</PartWidth>
       <PartHeight>0.94</PartHeight>
       <VinToCalc>55</VinToCalc>
-      <IoToCalc>3</IoToCalc>
+      <IoToCalc>2</IoToCalc>
       <MaxVin>65</MaxVin>
       <NomVin>60</NomVin>
       <MinVin>55</MinVin>
       <SwitchingFreq>201000</SwitchingFreq>
-      <OutputVol>28.14</OutputVol>
-      <OutputCur>3</OutputCur>
+      <OutputVol>27.55</OutputVol>
+      <OutputCur>2.5</OutputCur>
       <NPh>1</NPh>
       <NIc>1</NIc>
       <VinD>7</VinD>
@@ -101,9 +101,9 @@
       <CobDerated>0.0001</CobDerated>
       <CobVoltageRating>35</CobVoltageRating>
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
-      <VoStepMaxTargetPercent>2.90109371285405</VoStepMaxTargetPercent>
+      <VoStepMaxTargetPercent>-7474.82820142217</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
-      <Coc>2.99372E-06</Coc>
+      <Coc>3.079186E-06</Coc>
       <ESRc>0.0022</ESRc>
       <ESLc>1.03E-09</ESLc>
       <Numc>6</Numc>
@@ -116,7 +116,7 @@
       <CocAtHalfRated>4.535E-06</CocAtHalfRated>
       <CocAtFullRated>2E-06</CocAtFullRated>
       <CocAtNoVoltage>1E-05</CocAtNoVoltage>
-      <CocDerated>2.99372E-06</CocDerated>
+      <CocDerated>3.07918571428571E-06</CocDerated>
       <CocVoltageRating>35</CocVoltageRating>
       <OutputLCFilterEnabled>False</OutputLCFilterEnabled>
       <OutputLCFilterSensingIsLocal>False</OutputLCFilterSensingIsLocal>
@@ -125,7 +125,7 @@
       <Cthp>2.2E-10</Cthp>
       <Rth>4990</Rth>
       <RfbTopActual>1000000</RfbTopActual>
-      <RfbBotActual>35700</RfbBotActual>
+      <RfbBotActual>36500</RfbBotActual>
       <CfbTopActual>5E-12</CfbTopActual>
       <FcDesired>10000</FcDesired>
       <PhaseBoostDesired>10</PhaseBoostDesired>
@@ -138,20 +138,21 @@
       <Rfreq>226000</Rfreq>
       <Vbias>5</Vbias>
       <HasExtvcc>True</HasExtvcc>
-      <LoadStepHigh>3</LoadStepHigh>
+      <LoadStepHigh>2</LoadStepHigh>
       <LoadStepSlewRate>10000000</LoadStepSlewRate>
       <TonMin>3.5E-08</TonMin>
       <ToffMin>8E-08</ToffMin>
-      <ProjectName>Demo Board DC2660A</ProjectName>
-      <ProjectDate>March 2018</ProjectDate>
+      <ProjectName>Portable Power Supplyl</ProjectName>
+      <ProjectDate>February 2021</ProjectDate>
+      <ProjectDesigner>R.D.Smith</ProjectDesigner>
       <VinStartUp>55</VinStartUp>
       <VSD_Desired>55</VSD_Desired>
       <VOV_Latch_Desired>55</VOV_Latch_Desired>
       <VOV_NonLatch_Desired>55</VOV_NonLatch_Desired>
       <RailNumber>1</RailNumber>
-      <BW>5.01</BW>
-      <PM>48.85</PM>
-      <DeltaVoLoadStep>591.652882848582</DeltaVoLoadStep>
+      <BW>28.18</BW>
+      <PM>36.14</PM>
+      <DeltaVoLoadStep>193158.294013253</DeltaVoLoadStep>
       <FootprintClearanceFactor>1.5</FootprintClearanceFactor>
       <Mode>Buck</Mode>
       <ModeChanged>False</ModeChanged>
@@ -169,8 +170,8 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.9897</Efficiency>
-      <VoutRipplePercent>0.0013090603</VoutRipplePercent>
+      <Efficiency>0.9901</Efficiency>
+      <VoutRipplePercent>0.0013215926</VoutRipplePercent>
       <LossCurveA2>0.0479274789</LossCurveA2>
       <LossCurveA1>0.078030351</LossCurveA1>
       <LossCurveA0>0.1461905029</LossCurveA0>
@@ -185,32 +186,5 @@
       <PartFamily>Switching Regulator</PartFamily>
     </OutputRailData>
   </OutputRailDatas>
-  <NotationLabelControls>
-    <NotationLabelControl>
-      <Left>1216</Left>
-      <Top>608</Top>
-      <Width>350</Width>
-      <Height>40</Height>
-      <Text>Analog Device Demo Board DC2660A</Text>
-      <Background>#00FFFFFF</Background>
-      <FontFamily>Segoe UI</FontFamily>
-      <FontSize>19.80000114440918</FontSize>
-      <Foreground>#FF800000</Foreground>
-      <FontStyle>Normal</FontStyle>
-      <FontWeight>Bold</FontWeight>
-    </NotationLabelControl>
-    <NotationLabelControl>
-      <Left>1188</Left>
-      <Top>644</Top>
-      <Width>400</Width>
-      <Height>40</Height>
-      <Text>* See demo manual for detailed Vin and Vout/Iout spec.</Text>
-      <Background>#00FFFFFF</Background>
-      <FontFamily>Segoe UI</FontFamily>
-      <FontSize>16</FontSize>
-      <Foreground>#FF0000FF</Foreground>
-      <FontStyle>Normal</FontStyle>
-      <FontWeight>Normal</FontWeight>
-    </NotationLabelControl>
-  </NotationLabelControls>
+  <NotationLabelControls />
 </Root>

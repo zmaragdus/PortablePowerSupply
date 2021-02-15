@@ -16,16 +16,16 @@ $EndDescr
 $Comp
 L power:GND #PWR?
 U 1 1 5E888D15
-P 8850 2200
-F 0 "#PWR?" H 8850 1950 50  0001 C CNN
-F 1 "GND" H 8855 2027 50  0000 C CNN
-F 2 "" H 8850 2200 50  0001 C CNN
-F 3 "" H 8850 2200 50  0001 C CNN
-	1    8850 2200
+P 8900 2200
+F 0 "#PWR?" H 8900 1950 50  0001 C CNN
+F 1 "GND" H 8905 2027 50  0000 C CNN
+F 2 "" H 8900 2200 50  0001 C CNN
+F 3 "" H 8900 2200 50  0001 C CNN
+	1    8900 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 2200 8850 2000
+	8900 2200 8900 2000
 Wire Wire Line
 	7200 2000 7150 2000
 $Comp
@@ -52,13 +52,15 @@ F0 "LinearReg" 50
 F1 "LinearReg.sch" 50
 F2 "GND" B R 8800 2000 50 
 F3 "Vin" B L 7950 1550 50 
-F4 "Vload" B R 8800 1550 50 
-F5 "Vadj" B L 7950 1750 50 
-F6 "Iadj" B L 7950 1850 50 
-F7 "EN" B L 7950 2000 50 
+F4 "Iadj" B L 7950 1850 50 
+F5 "EN" B L 7950 2000 50 
+F6 "Vout" B R 8800 1550 50 
+F7 "LDOTemp" B L 7950 1650 50 
+F8 "Vadj" B L 7950 1750 50 
+F9 "5V" I R 8800 1850 50 
 $EndSheet
 Wire Wire Line
-	8850 2000 8800 2000
+	8900 2000 8800 2000
 Connection ~ 7300 1550
 Wire Wire Line
 	7300 1550 7950 1550
@@ -81,18 +83,16 @@ U 5E918E7D
 F0 "SupplyAdj" 50
 F1 "SupplyAdj.sch" 50
 F2 "GND" B R 6500 4100 50 
-F3 "Vout_adj" B R 6500 3400 50 
-F4 "Iout_adj" B R 6500 3550 50 
-F5 "EN_out" B L 5500 3300 50 
-F6 "SCL" B L 5500 4050 50 
-F7 "SDA" B L 5500 3950 50 
-F8 "Vdd" B R 6500 4000 50 
-F9 "~ALT_2C" B L 5500 3650 50 
-F10 "~ALT_2E" B L 5500 3750 50 
-F11 "LDO_EN" B R 6500 3700 50 
-F12 "Vbus_adj" B R 6500 3250 50 
-F13 "EN_bus" B L 5500 3400 50 
-F14 "~ALT_2A" B L 5500 3550 50 
+F3 "Iout_adj" B R 6500 3550 50 
+F4 "SCL" B L 5500 4050 50 
+F5 "SDA" B L 5500 3950 50 
+F6 "Vdd" B R 6500 4000 50 
+F7 "~ALT_2C" B L 5500 3550 50 
+F8 "LDO_out" B R 6500 3300 50 
+F9 "Vpre_adj" B L 5500 3350 50 
+F10 "LDO_adj" B R 6500 3400 50 
+F11 "LDO_en" O R 6500 3700 50 
+F12 "DAC_en" I L 5500 3750 50 
 $EndSheet
 Text Notes 1300 1200 0    50   ~ 0
 Line AC
@@ -142,7 +142,7 @@ Wire Wire Line
 	6600 4000 6500 4000
 Wire Wire Line
 	6600 3900 6600 4000
-Text Notes 5350 2900 0    100  ~ 0
+Text Notes 5600 2900 0    100  ~ 0
 Adjustment
 $Comp
 L power:GND #PWR?
@@ -172,36 +172,36 @@ F4 "Vbus" B L 1600 6050 50
 F5 "AuxGnd_I" B R 2500 6150 50 
 $EndSheet
 Text Notes 7350 1500 0    50   ~ 0
-OUT + 0.75V
+OUT + 0.6V
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5ECE72C5
-P 9500 1550
-F 0 "J?" H 9580 1542 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 9580 1451 50  0000 L CNN
-F 2 "" H 9500 1550 50  0001 C CNN
-F 3 "~" H 9500 1550 50  0001 C CNN
-	1    9500 1550
+P 10300 1550
+F 0 "J?" H 10380 1542 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10380 1451 50  0000 L CNN
+F 2 "" H 10300 1550 50  0001 C CNN
+F 3 "~" H 10300 1550 50  0001 C CNN
+	1    10300 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9300 1550 8950 1550
+	10100 1550 9700 1550
 $Comp
 L power:GND #PWR?
 U 1 1 5ECE7CAE
-P 9200 1850
-F 0 "#PWR?" H 9200 1600 50  0001 C CNN
-F 1 "GND" H 9205 1677 50  0000 C CNN
-F 2 "" H 9200 1850 50  0001 C CNN
-F 3 "" H 9200 1850 50  0001 C CNN
-	1    9200 1850
+P 10000 1850
+F 0 "#PWR?" H 10000 1600 50  0001 C CNN
+F 1 "GND" H 10005 1677 50  0000 C CNN
+F 2 "" H 10000 1850 50  0001 C CNN
+F 3 "" H 10000 1850 50  0001 C CNN
+	1    10000 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 1850 9200 1650
+	10000 1850 10000 1650
 Wire Wire Line
-	9200 1650 9300 1650
-Text Notes 9050 1450 0    50   ~ 0
+	10000 1650 10100 1650
+Text Notes 9850 1450 0    50   ~ 0
 OUT
 Wire Wire Line
 	1600 1700 1600 1850
@@ -264,10 +264,10 @@ Wire Wire Line
 Text Notes 2450 1800 0    50   ~ 0
 Filtered &\nProtected\nAC
 Wire Wire Line
-	8950 1550 8950 2350
-Connection ~ 8950 1550
+	9700 1550 9700 2350
+Connection ~ 9700 1550
 Wire Wire Line
-	8950 1550 8800 1550
+	9700 1550 8800 1550
 $Comp
 L Device:R_US R?
 U 1 1 60201FE2
@@ -297,7 +297,7 @@ $EndComp
 Wire Wire Line
 	10200 2350 10200 2450
 Wire Wire Line
-	8950 2350 10200 2350
+	9700 2350 10200 2350
 Wire Wire Line
 	10200 2750 10200 2800
 $Comp
@@ -314,11 +314,11 @@ $EndComp
 Wire Wire Line
 	10200 3250 10200 3150
 Wire Wire Line
-	10200 2800 10600 2800
+	10200 2800 10800 2800
 Connection ~ 10200 2800
 Wire Wire Line
 	10200 2800 10200 2850
-Text Label 10400 2800 0    50   ~ 0
+Text Label 10800 2800 2    50   ~ 0
 MainOutADC
 Text Label 9800 2350 0    50   ~ 0
 MainOut
@@ -330,7 +330,7 @@ Text Label 5000 3950 0    50   ~ 0
 SDA
 Text Label 5000 4050 0    50   ~ 0
 SCL
-Text Notes 1700 4100 0    100  ~ 0
+Text Notes 1700 3650 0    100  ~ 0
 System\nRegulator
 Text Label 1550 1500 2    50   ~ 0
 L
@@ -376,15 +376,84 @@ N_filt
 Wire Wire Line
 	7600 1850 7600 3550
 $Sheet
-S 1600 4250 900  850 
+S 1600 3800 900  850 
 U 604399F3
 F0 "SysPower" 50
 F1 "SysPower.sch" 50
-F2 "Vbus" I L 1600 4400 50 
-F3 "GND" B R 2500 5000 50 
-F4 "PGOOD" O L 1600 4750 50 
-F5 "5V" O R 2500 4400 50 
+F2 "Vbus" I L 1600 3950 50 
+F3 "GND" B R 2500 4550 50 
+F4 "PGOOD" O L 1600 4300 50 
+F5 "5V" O R 2500 3950 50 
 $EndSheet
 Text Notes 900  7500 0    50   ~ 0
 All resistors 0603 size unless otherwise stated\nAll capacitors 0603 size unless otherwise stated\nAll capacitors rated for 16V unless otherwise stated
+Wire Wire Line
+	6500 3300 7150 3300
+Text Label 7150 3300 2    50   ~ 0
+MainOut
+Wire Wire Line
+	2500 6050 3100 6050
+Text Label 3100 6050 2    50   ~ 0
+AuxOut
+Wire Wire Line
+	2500 6150 3100 6150
+Text Label 3100 6150 2    50   ~ 0
+AuxGnd
+Wire Wire Line
+	3550 1500 4300 1500
+Text Label 4300 1500 2    50   ~ 0
+VBus
+Wire Wire Line
+	1150 3950 1600 3950
+Text Label 1150 3950 0    50   ~ 0
+VBus
+Text Label 1100 6050 0    50   ~ 0
+VBus
+Wire Wire Line
+	1100 6050 1600 6050
+$Comp
+L power:+5V #PWR?
+U 1 1 6035C946
+P 2650 3850
+F 0 "#PWR?" H 2650 3700 50  0001 C CNN
+F 1 "+5V" H 2750 3900 50  0000 C CNN
+F 2 "" H 2650 3850 50  0001 C CNN
+F 3 "" H 2650 3850 50  0001 C CNN
+	1    2650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3850 2650 3950
+Wire Wire Line
+	2650 3950 2500 3950
+$Comp
+L power:GND #PWR?
+U 1 1 6035E40E
+P 2600 4750
+F 0 "#PWR?" H 2600 4500 50  0001 C CNN
+F 1 "GND" H 2605 4577 50  0000 C CNN
+F 2 "" H 2600 4750 50  0001 C CNN
+F 3 "" H 2600 4750 50  0001 C CNN
+	1    2600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4750 2600 4550
+Wire Wire Line
+	2600 4550 2500 4550
+$Comp
+L power:+5V #PWR?
+U 1 1 603ACEF5
+P 8900 1750
+F 0 "#PWR?" H 8900 1600 50  0001 C CNN
+F 1 "+5V" H 9000 1800 50  0000 C CNN
+F 2 "" H 8900 1750 50  0001 C CNN
+F 3 "" H 8900 1750 50  0001 C CNN
+	1    8900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1750 8900 1850
+Wire Wire Line
+	8900 1850 8800 1850
 $EndSCHEMATC
