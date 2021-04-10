@@ -36,15 +36,17 @@ Below are the overall goals of the project. All other specifications should work
 
 - Output current limit must be adjustable.
 - No remote sense / cable compensation for initial design.
-- Precision current DAC will pull voltage feedback node up/down
+- Precision current DAC will source/sink feedback current for coarse adjustment
+- Digital potentiometer will adjust feedback resistance for fine adjustment
+- Analog switch will toggle range
 - Digital potentiometer will adjust current limit node.
 
 #### Printed Circuit Board / Hardware
 
-- For resistor and capacitor footprints, it is preferred (though not required) to use either one size up (e.g. an 0805 footprint for an 0603 capacitor) or the "hand soldering" footprint for the same size. This is to facilitate hand soldering.
+- To facilitate hand-soldering, it is preferred (though not required) to use either one size up in footprint size (e.g. an 0805 footprint for an 0603 capacitor) or the "hand soldering" footprint for the same size.
 - No BGAs will be used. Any parts with hidden exposed pads to be soldered require a through hole large enough to get a small soldering iron tip through the other side to touch the pad for manual soldering.
 - Minimum via size is 0.3mm, minimum trace/space is 0.15mm
-- Layer 2 is full ground plane, no gaps / cutouts / moats. Routing discipline will be used to effect minimal interference between power, analog, and digital sections.
+- Layer 2 is full ground plane. Routing discipline will be used to effect minimal interference between power, analog, and digital sections.
 - Vias should not be soldermasked over unless properly plugged/filled.
 
 #### Standard Components
@@ -82,7 +84,7 @@ Below are the overall goals of the project. All other specifications should work
 #### User Interface
 
 - Output voltage and current limits adjusted via independent rotary dials.
-- Rotary dials connected to potentiometer (preferred) or quadrature encoder (if microcontroller has sufficient capabilities and cost impact is modest).
+- Rotary dials connected to potentiometer.
 - Output enabled/disabled through latching pushbutton.
 - LED indicator for power states: LED on for output activated, LED off for output deactivated, and LED blinking for fault.
 - Digital display must, at minimum, show actual output voltage and current. If additional area / capabilities exist, can also display output setpoints and any active faults (either a numeric code or an explicit statement).

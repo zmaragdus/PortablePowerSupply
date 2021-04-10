@@ -117,12 +117,12 @@ L Device:D_Schottky D?
 U 1 1 602545B6
 P 5350 1850
 F 0 "D?" H 5350 1650 50  0000 C CNN
-F 1 "1N5819HW" H 5350 1750 50  0000 C CNN
+F 1 "PMEG2005EGW" H 5350 1750 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 5350 1850 50  0001 C CNN
 F 3 "~" H 5350 1850 50  0001 C CNN
-F 4 "DiodesInc_1N5819HW-7-F" H 5350 1850 50  0001 C CNN "MfrNum"
-F 5 "40V" H 5350 1950 50  0000 C CNN "VRating"
-F 6 "1A" H 5350 2050 50  0000 C CNN "IRating"
+F 4 "Nexperia_PMEG2005EGW" H 5350 1850 50  0001 C CNN "MfrNum"
+F 5 "20V" H 5350 1950 50  0000 C CNN "VRating"
+F 6 "0.5A" H 5350 2050 50  0000 C CNN "IRating"
 	1    5350 1850
 	-1   0    0    1   
 $EndComp
@@ -697,7 +697,7 @@ Wire Wire Line
 	2550 2000 2550 1700
 Connection ~ 2550 1700
 Wire Wire Line
-	2550 1700 3400 1700
+	2550 1700 2750 1700
 $Comp
 L power:GND #PWR?
 U 1 1 602B0B37
@@ -1344,4 +1344,27 @@ Text Notes 700  7600 0    50   ~ 0
 All resistors 0603 size unless otherwise stated\nAll capacitors 0603 size unless otherwise stated\nAll capacitors rated for 16V unless otherwise stated
 Text Notes 4800 1750 0    50   ~ 0
 4:1
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6068DAC6
+P 2750 1550
+AR Path="/5E80D1C0/6068DAC6" Ref="TP?"  Part="1" 
+AR Path="/5E80D210/6068DAC6" Ref="TP?"  Part="1" 
+AR Path="/5E84FADE/6068DAC6" Ref="TP?"  Part="1" 
+AR Path="/5ECFB146/6068DAC6" Ref="TP?"  Part="1" 
+AR Path="/5EB6CA11/6068DAC6" Ref="TP?"  Part="1" 
+F 0 "TP?" H 2700 1850 50  0000 L CNN
+F 1 "Vbus" H 2700 1750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2950 1550 50  0001 C CNN
+F 3 "~" H 2950 1550 50  0001 C CNN
+	1    2750 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1550 2750 1700
+Connection ~ 2750 1700
+Wire Wire Line
+	2750 1700 3400 1700
+Text Notes 2850 3500 0    50   ~ 0
+Lower-voltage\nfootprint-compatile\npart : LT3001
 $EndSCHEMATC

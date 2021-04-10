@@ -79,7 +79,6 @@ F 3 "~" H 8150 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 1950 7350 1800
-Connection ~ 7350 1800
 Wire Wire Line
 	7350 1800 7750 1800
 Wire Wire Line
@@ -207,22 +206,6 @@ Wire Wire Line
 Text HLabel 6400 2700 2    50   BiDi ~ 0
 LDOTemp
 $Comp
-L Device:C C?
-U 1 1 5ECC6C16
-P 6950 2050
-AR Path="/5E84FADE/5ECC6C16" Ref="C?"  Part="1" 
-AR Path="/5E917C1A/5ECC6C16" Ref="C?"  Part="1" 
-F 0 "C?" H 7050 2150 50  0000 L CNN
-F 1 "100n" H 7050 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 1900 50  0001 C CNN
-F 3 "~" H 6950 2050 50  0001 C CNN
-F 4 "Murata_GRM155R61H104KE19D" H 6950 2050 50  0001 C CNN "MfrNum"
-F 5 "50V" H 7050 1950 50  0000 L CNN "VRating"
-F 6 "0402" H 7050 1850 50  0000 L CNN "Size"
-	1    6950 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5ECC6C1D
 P 6950 2400
@@ -235,13 +218,6 @@ F 3 "" H 6950 2400 50  0001 C CNN
 	1    6950 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 2400 6950 2200
-Wire Wire Line
-	6950 1900 6950 1800
-Connection ~ 6950 1800
-Wire Wire Line
-	6950 1800 7350 1800
 $Comp
 L Device:R_US R?
 U 1 1 5ECF0A9D
@@ -307,10 +283,6 @@ $EndComp
 Wire Wire Line
 	1900 4700 1900 4850
 Connection ~ 1900 4850
-Text Label 6550 1800 0    50   ~ 0
-LDO_out
-Wire Wire Line
-	6150 1800 6950 1800
 Wire Wire Line
 	5000 2200 5150 2200
 Text Label 6600 2000 2    50   ~ 0
@@ -516,4 +488,26 @@ Text Notes 5350 5000 0    50   ~ 0
 Constant Current Load
 Text Notes 7100 3050 0    50   ~ 0
 Feedback comes from digipot and I DAC
+$Comp
+L Device:C_Feedthrough C?
+U 1 1 6067EC07
+P 6950 1900
+F 0 "C?" H 6950 2205 50  0000 C CNN
+F 1 "C_Feedthrough" H 6950 2114 50  0000 C CNN
+F 2 "" V 6950 1900 50  0001 C CNN
+F 3 "~" V 6950 1900 50  0001 C CNN
+	1    6950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2000 6950 2400
+Wire Wire Line
+	6750 1800 6150 1800
+Wire Wire Line
+	7150 1800 7350 1800
+Connection ~ 7350 1800
+Text Label 6250 1800 0    50   ~ 0
+LDO_O
+Text Label 7550 1800 0    50   ~ 0
+LDO_out
 $EndSCHEMATC
