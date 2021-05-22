@@ -1,9 +1,9 @@
-rset_act = 250000;
+rset_act = 25000;
 dpot_r = 20000;
 dpot_steps = 2^10;
 
 
-for i = [-37e-6:1e-6:-34e-6]
+for i = [50e-6:1e-6:63e-6]
 
 for r = [1:dpot_steps]
  
