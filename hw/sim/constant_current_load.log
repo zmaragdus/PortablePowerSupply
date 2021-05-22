@@ -1,21 +1,30 @@
 Circuit: * C:\Users\Robet\Documents\ee_projects\PortablePowerSupply\PortablePowerSupply\hw\sim\constant_current_load.asc
 
 Direct Newton iteration for .op point succeeded.
+.step temp=-10°C
+.step temp=5°C
+.step temp=20°C
+.step temp=35°C
+.step temp=50°C
+.step temp=65°C
+.step temp=80°C
+.step temp=95°C
+.step temp=110°C
 
-Date: Sun Mar 28 00:46:16 2021
-Total elapsed time: 0.107 seconds.
+Date: Tue Apr 27 21:42:04 2021
+Total elapsed time: 0.517 seconds.
 
 tnom = 27
-temp = 27
+temp = 110
 method = modified trap
-totiter = 2126
-traniter = 2117
-tranpoints = 1058
-accept = 1052
-rejected = 6
-matrix size = 9
+totiter = 2134
+traniter = 2126
+tranpoints = 1064
+accept = 1056
+rejected = 8
+matrix size = 12
 fillins = 0
 solver = Normal
-Matrix Compiler1:      26 opcodes  0.1/[0.1]/0.1
-Matrix Compiler2: off  [0.1]/0.1/0.1
+Matrix Compiler1: 766 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 954 bytes object code size  0.1/0.2/[0.1]
 

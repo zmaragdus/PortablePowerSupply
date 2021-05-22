@@ -60,10 +60,18 @@ void setup()
     SPI.beginTransaction(SPISettings(500000,MSBFIRST,SPI_MODE0));
     
     // set adjusters to 0V
+
     
     // initialize display
+
+
+    // initialize ADC
+
     
     // enable interrupts and attach function to power-off
+
+
+
 }
 
 

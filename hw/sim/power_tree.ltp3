@@ -1,4 +1,4 @@
-<Vers> 3.5.1
+<Vers> 3.5.2
 <Tabs> 1, #FFFDF5E6, New Tab 1
 <Summ> 220, 385, 24, #FF000000, #00FFFFFF
 <BPrt> Power, 1, 85, 205, Power 1
@@ -58,28 +58,6 @@
 	Ipeak   : 90
 	IpeakU  : -3
 	Title   : 
-<BPrt> Converter, 70, 875, 205, LT8646S
-	Color   : #FFFF7F50
-	Width   : 120
-	Height  : 60
-	PartNumb: LT8646S
-	SizeArea: 559.5
-	Topology: 1
-	ConvType: 1
-	CadPath : C:\Users\Robet\Documents\ee_projects\PortablePowerSupply\PortablePowerSupply\hw\sim\LT8646S.ltpc
-	VisType : 1
-<Term> Input, 1
-	VinMin  : 55
-	VinMax  : 65
-<Term> Output, 1
-	Vout    : 28.14
-	VoutMin : 0.97
-	VoutMax : 60
-	Dropout : 0
-	IoutMin : 0
-	IoutMax : 3
-	pLossSet: 1
-	MatrixA : 0.0479274789, 0.078030351, 0.1461905029
 <BPrt> Converter, 67, 530, 205, LT3789
 	Color   : #FFFF7F50
 	Width   : 120
@@ -89,40 +67,11 @@
 	VinMin  : 80
 	VinMax  : 250
 <Term> Output, 1
-	Vout    : 60
+	Vout    : 30
 	VoutMin : 55
 	VoutMax : 65
 	IoutMax : 3
 	NomEff  : 92
-<BPrt> Converter, 75, 875, 670, LT8620
-	Color   : #FF6495ED
-	Width   : 120
-	Height  : 60
-	PartNumb: LT8620
-	SizeArea: 165.5
-	Topology: 1
-	ConvType: 1
-	CadPath : C:\Users\Robet\Documents\ee_projects\PortablePowerSupply\PortablePowerSupply\hw\sim\LT8620.ltpc
-	VisType : 1
-<Term> Input, 1
-	VinMin  : 55
-	VinMax  : 65
-<Term> Output, 1
-	Vout    : 4.96
-	VoutMin : 0.97
-	VoutMax : 60
-	Dropout : 0
-	IoutMin : 0
-	IoutMax : 2
-	pLossSet: 2
-	MtrxFreq: 248000
-	MtrxIoMn: 0
-	MtrxIoMx: 2
-	MtrxVnMn: 55
-	MtrxVnMx: 65
-	MatrixA : 0.1791576697, 0.0349208145, 0.2091915958
-	MatrixB : -0.24901259767952, 0.00261028221216, 0.16280695494336, 0.01350150668224, 1.45860408E-05, 0.0001825759232, -9.534382832E-05, 1.0414816E-05, 2.07247248E-06
-	MatrixC : 4.3912496923, 0.0026123694, 0.1413526316, -0.1383189272, 1.44919E-05, 0.0005410876, 0.0011364513, 1.04168E-05, 8.01E-08, -1.5694989551, -1.0289E-06, 0.0041736696, 0.0511654235, 4.13E-08, -6.97485E-05, -0.000414976, -4E-10, 3.878E-07, 0.1278149603, 1.226E-07, 3.06046E-05, -0.0041444486, -4.5E-09, -5.105E-07, 3.35948E-05, 0, 2.8E-09
 <BPrt> Load, 78, 1485, 670, MCU
 	Color   : #FF6495ED
 	Width   : 80
@@ -187,7 +136,7 @@
 	VisType : 2
 <Term> Input, 1
 	Inom    : 0.1
-	Ipeak   : 0.2
+	Ipeak   : 0.15
 <BPrt> LDO, 99, 1140, 440, ADP151
 	Color   : #FF7FFF00
 	Width   : 120
@@ -195,7 +144,7 @@
 	VisType : 1
 <Term> Input, 1
 <Term> Output, 1
-	Vout    : 5
+	Vout    : 5.1
 	IoutMax : 0.2
 <BPrt> Load, 108, 1485, 1040, Fan
 	Color   : #FF6495ED
@@ -205,6 +154,20 @@
 <Term> Input, 1
 	Inom    : 0.19
 	Ipeak   : 0.22
+<BPrt> Converter, 111, 875, 205, Converter 111
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+<BPrt> Converter, 112, 875, 670, Converter 112
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
 <Symb> Rectangle, 0, 0, 0, 0,0, 0,0
 	Color   : #FF000000
 	Color2  : #00FFFFFF
@@ -229,7 +192,7 @@
 	Color   : #FF000000
 	Color2  : #00FFFFFF
 	Thicknss: 24
-<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
+<Symb> Rectangle, 0, 0, 0, 0,0, 0,0
 	Color   : #FF000000
 	Color2  : #00FFFFFF
 	Thicknss: 24
@@ -259,50 +222,8 @@
 	STermPID: 45
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 71, 72
+	EWires  : 115, 116
 	Points  : (1210,325)(1140,325)(1140,235)
-<Wire> 71, 33
-	ZIndex  : -1
-	STermPID: 70
-	STermTyp: Output
-	STermNum: 1
-	EWires  : 46, 72
-	Points  : (995,235)(1140,235)
-<Wire> 72, 33
-	ZIndex  : -1
-	ETermPID: 27
-	ETermTyp: Input
-	ETermNum: 1
-	SWires  : 71, 46
-	Points  : (1140,235)(1210,235)
-<Wire> 74, 73
-	ZIndex  : -1
-	STermPID: 67
-	STermTyp: Output
-	STermNum: 1
-	EWires  : 77, 92
-	Points  : (650,235)(735,235)
-<Wire> 76, 73
-	ZIndex  : -1
-	STermPID: 75
-	STermTyp: Input
-	STermNum: 1
-	EWires  : 91, 92
-	Points  : (875,700)(735,700)(735,470)
-<Wire> 77, 73
-	ZIndex  : -1
-	ETermPID: 70
-	ETermTyp: Input
-	ETermNum: 1
-	SWires  : 74, 92
-	Points  : (735,235)(875,235)
-<Wire> 83, 82
-	ZIndex  : -1
-	STermPID: 75
-	STermTyp: Output
-	STermNum: 1
-	EWires  : 85, 89
-	Points  : (995,700)(1395,700)
 <Wire> 84, 82
 	ZIndex  : -1
 	STermPID: 81
@@ -312,11 +233,9 @@
 	Points  : (1485,980)(1395,980)
 <Wire> 85, 82
 	ZIndex  : -1
-	ETermPID: 78
-	ETermTyp: Input
-	ETermNum: 1
-	SWires  : 83, 89
-	Points  : (1395,700)(1485,700)
+	SWires  : 88, 87
+	EWires  : 117, 118
+	Points  : (1395,795)(1395,700)
 <Wire> 86, 82
 	ZIndex  : -1
 	STermPID: 80
@@ -327,32 +246,22 @@
 <Wire> 87, 82
 	ZIndex  : -1
 	SWires  : 86, 110
-	EWires  : 88, 89
+	EWires  : 88, 85
 	Points  : (1395,890)(1395,795)
 <Wire> 88, 82
 	ZIndex  : -1
 	STermPID: 79
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 87, 89
+	EWires  : 87, 85
 	Points  : (1485,795)(1395,795)
-<Wire> 89, 82
-	ZIndex  : -1
-	SWires  : 88, 87
-	EWires  : 83, 85
-	Points  : (1395,795)(1395,700)
 <Wire> 91, 73
 	ZIndex  : -1
 	STermPID: 90
 	STermTyp: Input
 	STermNum: 1
-	EWires  : 76, 92
+	EWires  : 119, 120
 	Points  : (875,470)(735,470)
-<Wire> 92, 73
-	ZIndex  : -1
-	SWires  : 91, 76
-	EWires  : 74, 77
-	Points  : (735,470)(735,235)
 <Wire> 95, 94
 	ZIndex  : -1
 	STermPID: 1
@@ -401,3 +310,57 @@
 	SWires  : 109, 84
 	EWires  : 86, 87
 	Points  : (1395,980)(1395,890)
+<Wire> 113, 73
+	ZIndex  : -1
+	ETermPID: 111
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 114, 120
+	Points  : (735,235)(875,235)
+<Wire> 114, 73
+	ZIndex  : -1
+	ETermPID: 67
+	ETermTyp: Output
+	ETermNum: 1
+	SWires  : 113, 120
+	Points  : (735,235)(650,235)
+<Wire> 115, 33
+	ZIndex  : -1
+	STermPID: 111
+	STermTyp: Output
+	STermNum: 1
+	EWires  : 46, 116
+	Points  : (995,235)(1140,235)
+<Wire> 116, 33
+	ZIndex  : -1
+	ETermPID: 27
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 115, 46
+	Points  : (1140,235)(1210,235)
+<Wire> 117, 82
+	ZIndex  : -1
+	STermPID: 112
+	STermTyp: Output
+	STermNum: 1
+	EWires  : 85, 118
+	Points  : (995,700)(1395,700)
+<Wire> 118, 82
+	ZIndex  : -1
+	ETermPID: 78
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 117, 85
+	Points  : (1395,700)(1485,700)
+<Wire> 119, 73
+	ZIndex  : -1
+	STermPID: 112
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 91, 120
+	Points  : (875,700)(735,700)(735,470)
+<Wire> 120, 73
+	ZIndex  : -1
+	SWires  : 119, 91
+	EWires  : 113, 114
+	Points  : (735,470)(735,235)
